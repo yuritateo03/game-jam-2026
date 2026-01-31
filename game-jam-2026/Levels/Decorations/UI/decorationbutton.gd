@@ -11,3 +11,4 @@ func _ready() -> void:
 
 func _on_pressed() -> void:
 	emit_signal("DecorationButtonPressed", deco_res)
+	

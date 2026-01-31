@@ -8,9 +8,54 @@
 [ext_resource type="Script" uid="uid://dlcpo27qodt3" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_vo7st"]
 [ext_resource type="Script" uid="uid://cgxru8smay6v3" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="5_7ugy3"]
 [ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_774x7"]
+[ext_resource type="Texture2D" uid="uid://kjqn3jc8om73" path="res://assets/objects/cappuccio.png" id="6_wa8mu"]
+[ext_resource type="Texture2D" uid="uid://56snc675a3ix" path="res://assets/objects/parrucca.png" id="10_0gyb6"]
+
+[sub_resource type="Resource" id="Resource_5wso4"]
+script = ExtResource("5_7ugy3")
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_bfvw3"]
+script = ExtResource("3_pm182")
+image = ExtResource("6_wa8mu")
+tags = SubResource("Resource_5wso4")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_gkx6n"]
+script = ExtResource("5_7ugy3")
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_ndu1b"]
+script = ExtResource("3_pm182")
+image = ExtResource("10_0gyb6")
+tags = SubResource("Resource_gkx6n")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_774x7"]
+script = ExtResource("5_7ugy3")
+position = 1
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_wa8mu"]
+script = ExtResource("3_pm182")
+image = ExtResource("1_ovnwc")
+tags = SubResource("Resource_774x7")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_0gyb6"]
+script = ExtResource("5_7ugy3")
+position = 1
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_vqjuy"]
+script = ExtResource("3_pm182")
+image = ExtResource("1_ovnwc")
+tags = SubResource("Resource_0gyb6")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="Resource" id="Resource_vo7st"]
 script = ExtResource("5_7ugy3")
+position = 2
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [sub_resource type="Resource" id="Resource_0tv47"]
@@ -19,12 +64,18 @@ image = ExtResource("1_ovnwc")
 tags = SubResource("Resource_vo7st")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
+[sub_resource type="Resource" id="Resource_7ugy3"]
+script = ExtResource("5_7ugy3")
+position = 2
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
 [sub_resource type="Resource" id="Resource_ok4l4"]
 script = ExtResource("3_pm182")
 image = ExtResource("1_ovnwc")
+tags = SubResource("Resource_7ugy3")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
-[node name="MainLevel" type="Control" unique_id=623848505]
+[node name="MainLevel" type="Control" unique_id=623848505 node_paths=PackedStringArray("characters_to_serve")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,22 +83,33 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j5hpt")
+characters_to_serve = [NodePath("GameInterface/CharacterInterface"), NodePath("GameInterface/CharacterInterface2"), NodePath("GameInterface/CharacterInterface3")]
 
-[node name="SplitContainer" type="SplitContainer" parent="." unique_id=1560537296]
+[node name="Background" type="TextureRect" parent="." unique_id=1420005651]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-split_offsets = PackedInt32Array(-100, 100)
-split_offset = -100
 
-[node name="QueryPanel" type="Panel" parent="SplitContainer" unique_id=604843572]
+[node name="GameInterface" type="SplitContainer" parent="." unique_id=1560537296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offsets = PackedInt32Array(-51)
+split_offset = -51
+metadata/_edit_lock_ = true
+
+[node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="QueryText" type="RichTextLabel" parent="SplitContainer/QueryPanel" unique_id=200240675]
+[node name="QueryText" type="RichTextLabel" parent="GameInterface/QueryPanel" unique_id=200240675]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -59,23 +121,48 @@ text = "La tua richiesta qui"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CharacterInterface" parent="SplitContainer" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
+[node name="CharacterInterface" parent="GameInterface" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
+visible = false
+layout_mode = 2
+query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+[node name="CharacterRect" parent="GameInterface/CharacterInterface" index="0" unique_id=2016840858]
+anchors_preset = -1
+anchor_top = 0.119
+offset_top = -0.5200043
+
+[node name="CharacterInterface2" parent="GameInterface" unique_id=1458582970 instance=ExtResource("2_7ugy3")]
+visible = false
 layout_mode = 2
 
-[node name="VSplitContainer" type="VSplitContainer" parent="SplitContainer" unique_id=744263395]
+[node name="CharacterRect" parent="GameInterface/CharacterInterface2" index="0" unique_id=2016840858]
+anchors_preset = -1
+anchor_top = 0.119
+offset_top = -0.5200043
+
+[node name="CharacterInterface3" parent="GameInterface" unique_id=817062701 instance=ExtResource("2_7ugy3")]
+visible = false
+layout_mode = 2
+
+[node name="CharacterRect" parent="GameInterface/CharacterInterface3" index="0" unique_id=2016840858]
+anchors_preset = -1
+anchor_top = 0.119
+offset_top = -0.5200043
+
+[node name="VSplitContainer" type="VSplitContainer" parent="GameInterface" unique_id=744263395]
 layout_mode = 2
 size_flags_horizontal = 3
 split_offsets = PackedInt32Array(100)
 split_offset = 100
 
-[node name="Time_PauseContainer" type="HSplitContainer" parent="SplitContainer/VSplitContainer" unique_id=556006061]
+[node name="Time_PauseContainer" type="HSplitContainer" parent="GameInterface/VSplitContainer" unique_id=556006061]
 layout_mode = 2
 
-[node name="TimerPanel" type="Panel" parent="SplitContainer/VSplitContainer/Time_PauseContainer" unique_id=123704600]
+[node name="TimerPanel" type="Panel" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=123704600]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="SplitContainer/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=141728070]
+[node name="Label" type="Label" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=141728070]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -87,15 +174,20 @@ text = "1:00"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PauseButton" type="TextureButton" parent="SplitContainer/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
+[node name="Timer" type="Timer" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1573459837]
+wait_time = 3.0
+one_shot = true
+
+[node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
+process_mode = 3
 layout_mode = 2
 texture_normal = ExtResource("1_ovnwc")
 
-[node name="ButtonsPanel" type="Panel" parent="SplitContainer/VSplitContainer" unique_id=383756867]
+[node name="ButtonsPanel" type="Panel" parent="GameInterface/VSplitContainer" unique_id=383756867]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="SplitContainer/VSplitContainer/ButtonsPanel" unique_id=1337541968]
+[node name="VBoxContainer" type="VBoxContainer" parent="GameInterface/VSplitContainer/ButtonsPanel" unique_id=1337541968]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -104,17 +196,137 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="UpButton" parent="SplitContainer/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+[node name="UpButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+layout_mode = 2
+main = NodePath("../../../../..")
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_bfvw3"), SubResource("Resource_ndu1b")])
+
+[node name="CenterButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+layout_mode = 2
+main = NodePath("../../../../..")
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_wa8mu"), SubResource("Resource_vqjuy")])
+
+[node name="DownButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
 
-[node name="CenterButton" parent="SplitContainer/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
-layout_mode = 2
-main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
+[node name="ResultLayer" type="CanvasLayer" parent="." unique_id=2101719848]
 
-[node name="DownButton" parent="SplitContainer/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+[node name="Control" type="Control" parent="ResultLayer" unique_id=1013403897]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Frame" type="TextureRect" parent="ResultLayer/Control" unique_id=2053930460]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.66700006
+anchor_top = 0.178
+anchor_right = 0.90000004
+anchor_bottom = 0.652
+offset_left = -0.6401367
+offset_top = -0.2400055
+offset_right = -0.00012207031
+offset_bottom = -0.16003418
+size_flags_horizontal = 4
+texture = ExtResource("1_ovnwc")
+
+[node name="ImageLimit" type="PanelContainer" parent="ResultLayer/Control/Frame" unique_id=402536305]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ResultLayer/Control" unique_id=1701552896]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.071
+anchor_top = 0.363
+anchor_right = 0.437
+anchor_bottom = 0.77000004
+offset_left = -8.320007
+offset_top = -8.040009
+offset_right = -7.040039
+offset_bottom = 0.39996338
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Il tuo commento qui"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleContainer" type="VBoxContainer" parent="ResultLayer/Control" unique_id=2052155332]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.633
+anchor_top = 0.711
+anchor_right = 0.933
+anchor_bottom = 0.88900006
+offset_left = 0.64001465
+offset_top = 0.11999512
+offset_right = 0.6398926
+offset_bottom = -0.12005615
+
+[node name="Label" type="Label" parent="ResultLayer/Control/TitleContainer" unique_id=544030827]
 layout_mode = 2
-main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
+theme_override_font_sizes/font_size = 30
+text = "Dai un titolo al tuo capolavoro"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="ResultLayer/Control/TitleContainer" unique_id=464150785]
+custom_minimum_size = Vector2(50, 80)
+layout_mode = 2
+
+[node name="ConfermResultButton" type="TextureButton" parent="ResultLayer/Control/TitleContainer" unique_id=1467431395]
+layout_mode = 2
+texture_normal = ExtResource("1_ovnwc")
+stretch_mode = 5
+
+[node name="GalleryLayer" type="CanvasLayer" parent="." unique_id=574671102]
+visible = false
+
+[node name="PauseLayer" type="CanvasLayer" parent="." unique_id=276146126]
+visible = false
+
+[node name="Control" type="Control" parent="PauseLayer" unique_id=338284360]
+layout_mode = 3
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PauseLayer/Control" unique_id=1699021372]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "SEI IN PAUSA CAFFè"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel/Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="GameInterface/VSplitContainer/Time_PauseContainer/PauseButton" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="ResultLayer/Control/TitleContainer/ConfermResultButton" to="." method="_on_conferm_result_button_pressed"]
+
+[editable path="GameInterface/CharacterInterface"]
+[editable path="GameInterface/CharacterInterface2"]
+[editable path="GameInterface/CharacterInterface3"]

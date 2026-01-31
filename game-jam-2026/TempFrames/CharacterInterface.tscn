@@ -1,28 +1,26 @@
-[gd_scene format=3 uid="uid://1b8d0g6jatmv"]
+[gd_scene format=3]
 
-[ext_resource type="Script" uid="uid://dr48uxsmpnmfn" path="res://Levels/character_interface.gd" id="1_awu3a"]
-[ext_resource type="Texture2D" uid="uid://cwxu2i0u1sr88" path="res://assets/characters/else.png" id="1_ouc0e"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_en3v0"]
+[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_fwep2"]
 
 [node name="CharacterInterface" type="Control" unique_id=1239138290]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_awu3a")
-character = ExtResource("1_ouc0e")
+script = ExtResource("1_en3v0")
+character = ExtResource("2_fwep2")
+query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_top = 0.119
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_ouc0e")
+texture = ExtResource("2_fwep2")
 stretch_mode = 5
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]

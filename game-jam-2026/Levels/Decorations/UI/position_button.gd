@@ -10,8 +10,11 @@ func _ready() -> void:
 		var button = DecorationButton.new()
 		button.deco_res = decoration
 		button.DecorationButtonPressed.connect(main._decoration_button_pressed)
+		button.DecorationButtonPressed.connect(_on_decoration_pressed)
 		deco_container.add_child(button)
 
 func _on_pressed() -> void:
 	deco_container.visible = !deco_container.visible
-	
+
+func _on_decoration_pressed(_deco_res) -> void:
+	deco_container.hide()
