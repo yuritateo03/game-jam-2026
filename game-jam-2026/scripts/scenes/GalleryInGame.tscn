@@ -1,17 +1,15 @@
-[gd_scene format=3 uid="uid://bnxv8wud8jl17"]
+[gd_scene format=3 uid="uid://bi4y2f4v11sul"]
 
-[ext_resource type="Script" uid="uid://dw505vewmg6m3" path="res://scripts/scenes/gallery.gd" id="1_gggyn"]
-[ext_resource type="Texture2D" uid="uid://cwoaf74ruto42" path="res://assets/gui/stanza.png" id="2_1lnb5"]
-[ext_resource type="FontFile" uid="uid://rawcgf4dtb73" path="res://assets/font/Google_Sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf" id="3_1mpka"]
-[ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="3_jwi4s"]
-[ext_resource type="Texture2D" uid="uid://d0ybvoao26k7w" path="res://scripts/gui/start group.png" id="4_caco8"]
-[ext_resource type="Texture2D" uid="uid://cae2v7dyhuc6g" path="res://scripts/gui/black rectangle.png" id="5_pk0bx"]
-[ext_resource type="Texture2D" uid="uid://urih2tyuhphj" path="res://scripts/gui/7 1.png" id="6_1lnb5"]
-[ext_resource type="Texture2D" uid="uid://chb6vle70y3be" path="res://scripts/gui/7 2.png" id="7_1mpka"]
-[ext_resource type="Texture2D" uid="uid://b7s0cq6rkumny" path="res://scripts/gui/bin.png" id="9_5omhl"]
-[ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="10_5omhl"]
-[ext_resource type="Texture2D" uid="uid://mis3lmp4gjxr" path="res://scripts/gui/image 2.png" id="10_jjgvv"]
-[ext_resource type="Texture2D" uid="uid://bx2tewua6amyn" path="res://assets/gui/rosy 2.png" id="12_2g4uy"]
+[ext_resource type="Script" uid="uid://bubqla4si1w0y" path="res://scripts/scenes/galleryInGame.gd" id="1_c8g65"]
+[ext_resource type="Texture2D" uid="uid://cwoaf74ruto42" path="res://assets/gui/stanza.png" id="2_lc104"]
+[ext_resource type="FontFile" uid="uid://rawcgf4dtb73" path="res://assets/font/Google_Sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf" id="4_awa8t"]
+[ext_resource type="Texture2D" uid="uid://d0ybvoao26k7w" path="res://scripts/gui/start group.png" id="5_kjb2p"]
+[ext_resource type="Texture2D" uid="uid://cae2v7dyhuc6g" path="res://scripts/gui/black rectangle.png" id="6_obhdu"]
+[ext_resource type="Texture2D" uid="uid://urih2tyuhphj" path="res://scripts/gui/7 1.png" id="7_lg284"]
+[ext_resource type="Texture2D" uid="uid://chb6vle70y3be" path="res://scripts/gui/7 2.png" id="8_dvgqg"]
+[ext_resource type="Texture2D" uid="uid://mis3lmp4gjxr" path="res://scripts/gui/image 2.png" id="10_2oqs6"]
+[ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="11_m4a03"]
+[ext_resource type="Texture2D" uid="uid://bx2tewua6amyn" path="res://assets/gui/rosy 2.png" id="12_c5mem"]
 
 [node name="Control" type="Control" unique_id=952706856]
 layout_mode = 3
@@ -20,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_gggyn")
+script = ExtResource("1_c8g65")
 
 [node name="Sfondo" type="TextureRect" parent="." unique_id=1254689822]
 layout_mode = 1
@@ -29,19 +27,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_1lnb5")
+texture = ExtResource("2_lc104")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1922326936]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1652.0
-offset_top = -3.0
-offset_bottom = -854.0
-texture = ExtResource("3_jwi4s")
-
-[node name="MenuExit" type="Button" parent="." unique_id=53749362]
+[node name="Continua" type="Button" parent="." unique_id=53749362]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
@@ -65,7 +53,7 @@ offset_bottom = -147.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/bold_font = ExtResource("3_1mpka")
+theme_override_fonts/bold_font = ExtResource("4_awa8t")
 theme_override_font_sizes/normal_font_size = 150
 theme_override_font_sizes/bold_font_size = 150
 text = "your gallery"
@@ -82,7 +70,7 @@ offset_bottom = 649.0
 [node name="Portrait1" type="Button" parent="HBoxContainer" unique_id=291167988]
 layout_mode = 2
 size_flags_horizontal = 0
-icon = ExtResource("4_caco8")
+icon = ExtResource("5_kjb2p")
 
 [node name="Control" type="Control" parent="HBoxContainer/Portrait1" unique_id=719529381]
 layout_mode = 1
@@ -98,7 +86,7 @@ offset_bottom = -0.020019531
 [node name="Portrait2" type="Button" parent="HBoxContainer" unique_id=666080213]
 layout_mode = 2
 size_flags_horizontal = 6
-icon = ExtResource("4_caco8")
+icon = ExtResource("5_kjb2p")
 
 [node name="Control2" type="Control" parent="HBoxContainer/Portrait2" unique_id=864183752]
 layout_mode = 1
@@ -113,7 +101,7 @@ offset_bottom = -0.02999878
 
 [node name="Portrait3" type="Button" parent="HBoxContainer" unique_id=2071720579]
 layout_mode = 2
-icon = ExtResource("4_caco8")
+icon = ExtResource("5_kjb2p")
 
 [node name="Control3" type="Control" parent="HBoxContainer/Portrait3" unique_id=491753941]
 layout_mode = 1
@@ -143,7 +131,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_pk0bx")
+texture = ExtResource("6_obhdu")
 
 [node name="Portrait" type="TextureRect" parent="Focus" unique_id=2096270755]
 layout_mode = 1
@@ -158,7 +146,7 @@ offset_right = 288.75
 offset_bottom = 311.5
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_caco8")
+texture = ExtResource("5_kjb2p")
 stretch_mode = 5
 
 [node name="Character" type="Control" parent="Focus" unique_id=2053559774]
@@ -182,7 +170,7 @@ offset_right = 716.25
 offset_bottom = 239.5
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("6_1lnb5")
+texture_normal = ExtResource("7_lg284")
 stretch_mode = 5
 
 [node name="sinistra" type="TextureButton" parent="Focus" unique_id=443782990]
@@ -198,31 +186,10 @@ offset_right = -272.75
 offset_bottom = 236.5
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("7_1mpka")
+texture_normal = ExtResource("8_dvgqg")
 stretch_mode = 5
 
-[node name="reset" type="TextureButton" parent="Focus" unique_id=88144062]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.58500004
-anchor_top = 0.70900005
-anchor_right = 0.637
-anchor_bottom = 0.80200005
-offset_left = 0.79992676
-offset_top = 0.27996826
-offset_right = 0.95996094
-offset_bottom = -0.16003418
-
-[node name="TextureRect" type="TextureRect" parent="Focus/reset" unique_id=1704892956]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 0.98
-offset_right = -1.0
-texture = ExtResource("9_5omhl")
-expand_mode = 2
-
-[node name="back" type="TextureButton" parent="Focus" unique_id=704014978]
+[node name="back" type="TextureButton" parent="Focus" unique_id=1102975269]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.015000001
@@ -233,7 +200,7 @@ offset_left = -0.80000114
 offset_top = -0.3600006
 offset_right = -30.279999
 offset_bottom = 0.27999115
-texture_normal = ExtResource("10_jjgvv")
+texture_normal = ExtResource("10_2oqs6")
 
 [node name="TextureRect" type="TextureRect" parent="Focus" unique_id=1766812928]
 visible = false
@@ -248,7 +215,7 @@ offset_top = -207.0
 offset_right = 739.5
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("10_5omhl")
+texture = ExtResource("11_m4a03")
 
 [node name="portrait_desc" type="Label" parent="Focus/TextureRect" unique_id=1202409107]
 visible = false
@@ -281,14 +248,12 @@ offset_right = -765.0
 offset_bottom = -285.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("12_2g4uy")
+texture = ExtResource("12_c5mem")
 expand_mode = 1
 
-[connection signal="pressed" from="MenuExit" to="." method="_on_menu_exit_pressed"]
 [connection signal="pressed" from="HBoxContainer/Portrait1" to="." method="_on_portrait_1_pressed"]
 [connection signal="pressed" from="HBoxContainer/Portrait2" to="." method="_on_portrait_2_pressed"]
 [connection signal="pressed" from="HBoxContainer/Portrait3" to="." method="_on_portrait_3_pressed"]
 [connection signal="pressed" from="Focus/destra" to="." method="_on_destra_pressed"]
 [connection signal="pressed" from="Focus/sinistra" to="." method="_on_sinistra_pressed"]
-[connection signal="pressed" from="Focus/reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="Focus/back" to="." method="_on_back_pressed"]

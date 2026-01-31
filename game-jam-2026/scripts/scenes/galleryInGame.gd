@@ -1,13 +1,12 @@
 extends Control
 
-@onready var bottone_menuExit = $MenuExit
+@onready var bottone_continua = $Continua
 @onready var bottone_portrait1 =$HBoxContainer/Portrait1
 @onready var bottone_portrait2 =$HBoxContainer/Portrait2
 @onready var bottone_portrait3 =$HBoxContainer/Portrait3
 
 @onready var bottone_destra =$Focus/destra
 @onready var bottone_sinistra =$Focus/sinistra
-@onready var bottone_reset =$Focus/reset
 @onready var bottone_back =$Focus/back
 
 @onready var portrait_desc =$Focus/TextureRect/portrait_desc
@@ -28,8 +27,9 @@ func _process(delta: float) -> void:
 	pass
 	
 	
-func _on_menu_exit_pressed() -> void:
-	get_tree().change_scene_to_file("res://scripts/scenes/MainTitle.tscn")
+func _on_bottone_continua_pressed() -> void:
+	#va avanti
+	pass
 
 func _on_destra_pressed() -> void:
 	print (array_nodi_control.size())
@@ -43,29 +43,6 @@ func _on_sinistra_pressed() -> void:
 		index = index - 1
 		mostra_personaggio(index)
 		
-
-func _on_reset_pressed() -> void:
-	print("Reset focus")
-	
-	var file_path = array_nodi_control[index].scene_file_path
-	
-	if array_nodi_control[index] != null:
-		array_nodi_control[index].queue_free()
-	
-	var nuova_scena = load("res://scripts/classes_and_objects/vuoto.tscn").instantiate()
-	
-	array_nodi_control[index] = nuova_scena
-	
-	if file_path != "" and FileAccess.file_exists(file_path) and file_path != "res://scripts/classes_and_objects/vuoto.tscn":
-		var dir = DirAccess.open("res://")
-		var error = dir.remove(file_path)
-		
-		if error == OK:
-			print("File eliminato con successo: ", file_path)
-		else:
-			print("Errore durante l'eliminazione del file: ", error)
-	
-	mostra_personaggio(index)
 
 func _on_portrait_1_pressed() -> void:
 	focus_area.visible = true;

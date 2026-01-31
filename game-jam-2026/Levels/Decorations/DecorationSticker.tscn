@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://jldwudnlbd7l"]
+
+[ext_resource type="Script" uid="uid://b4s7ocpdngrmo" path="res://Levels/Decorations/decoration_sticker.gd" id="1_1l5e0"]
+
+[node name="DecorationStricker" type="TextureRect" unique_id=1602875662]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_1l5e0")
