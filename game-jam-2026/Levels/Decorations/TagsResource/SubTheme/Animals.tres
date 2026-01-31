@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SubThemeTag" format=3 uid="uid://de3hk4rbp2gt0"]
+
+[ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="1_50ghp"]
+
+[resource]
+script = ExtResource("1_50ghp")
+name = "Animals"
+metadata/_custom_type_script = "uid://d30a6rhwi6wa"

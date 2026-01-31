@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ColorTag" format=3 uid="uid://cnham5c8puoq4"]
+
+[ext_resource type="Script" uid="uid://dlcpo27qodt3" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="1_duxr3"]
+
+[resource]
+script = ExtResource("1_duxr3")
+name = "Violet"
+metadata/_custom_type_script = "uid://dlcpo27qodt3"

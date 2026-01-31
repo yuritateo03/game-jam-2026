@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SubThemeTag" format=3 uid="uid://cadby1lewb7ln"]
+
+[ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="1_6s77w"]
+
+[resource]
+script = ExtResource("1_6s77w")
+name = "Circus"
+metadata/_custom_type_script = "uid://d30a6rhwi6wa"
