@@ -3,14 +3,15 @@ extends Control
 @onready var bottone_gioca = $HBoxContainer/Gioca
 @onready var bottone_gallery = $HBoxContainer/Gallery
 @onready var bottone_settings = $HBoxContainer/Settings
+@onready var title = $RichTextLabel
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _process(_delta: float) -> void:
+	title.text = Global.name
 
 func _on_gioca_button_pressed():
 	get_tree().change_scene_to_file("res://scripts/scenes/Gallery.tscn")
