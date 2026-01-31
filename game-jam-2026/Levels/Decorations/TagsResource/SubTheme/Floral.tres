@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SubThemeTag" format=3 uid="uid://cobpwckgure6y"]
+
+[ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="1_psnu7"]
+
+[resource]
+script = ExtResource("1_psnu7")
+name = "Floral"
+metadata/_custom_type_script = "uid://d30a6rhwi6wa"

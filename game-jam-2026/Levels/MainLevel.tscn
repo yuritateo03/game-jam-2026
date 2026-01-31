@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://cq10lk503vy4j"]
+
+[ext_resource type="Script" uid="uid://8yei28an8wad" path="res://Levels/LevelController.gd" id="1_j5hpt"]
+[ext_resource type="Texture2D" uid="uid://bupy6gjmdol5" path="res://icon.svg" id="1_ovnwc"]
+[ext_resource type="PackedScene" uid="uid://1b8d0g6jatmv" path="res://Levels/CharacterInterface.tscn" id="2_7ugy3"]
+[ext_resource type="PackedScene" uid="uid://c7uvsf2j4gksx" path="res://Levels/Decorations/UI/PositionButton.tscn" id="2_dncm7"]
+[ext_resource type="Script" uid="uid://oit62jpmos5h" path="res://Levels/Decorations/TagsResource/DecoRes.gd" id="3_pm182"]
+[ext_resource type="Script" uid="uid://dlcpo27qodt3" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_vo7st"]
+[ext_resource type="Script" uid="uid://cgxru8smay6v3" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="5_7ugy3"]
+[ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_774x7"]
+
+[sub_resource type="Resource" id="Resource_vo7st"]
+script = ExtResource("5_7ugy3")
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_0tv47"]
+script = ExtResource("3_pm182")
+image = ExtResource("1_ovnwc")
+tags = SubResource("Resource_vo7st")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_ok4l4"]
+script = ExtResource("3_pm182")
+image = ExtResource("1_ovnwc")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[node name="MainLevel" type="Control" unique_id=623848505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j5hpt")
+
+[node name="SplitContainer" type="SplitContainer" parent="." unique_id=1560537296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offsets = PackedInt32Array(-100, 100)
+split_offset = -100
+
+[node name="QueryPanel" type="Panel" parent="SplitContainer" unique_id=604843572]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QueryText" type="RichTextLabel" parent="SplitContainer/QueryPanel" unique_id=200240675]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "La tua richiesta qui"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterInterface" parent="SplitContainer" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
+layout_mode = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="SplitContainer" unique_id=744263395]
+layout_mode = 2
+size_flags_horizontal = 3
+split_offsets = PackedInt32Array(100)
+split_offset = 100
+
+[node name="Time_PauseContainer" type="HSplitContainer" parent="SplitContainer/VSplitContainer" unique_id=556006061]
+layout_mode = 2
+
+[node name="TimerPanel" type="Panel" parent="SplitContainer/VSplitContainer/Time_PauseContainer" unique_id=123704600]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="SplitContainer/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=141728070]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "1:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="SplitContainer/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
+layout_mode = 2
+texture_normal = ExtResource("1_ovnwc")
+
+[node name="ButtonsPanel" type="Panel" parent="SplitContainer/VSplitContainer" unique_id=383756867]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SplitContainer/VSplitContainer/ButtonsPanel" unique_id=1337541968]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="UpButton" parent="SplitContainer/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+layout_mode = 2
+main = NodePath("../../../../..")
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
+
+[node name="CenterButton" parent="SplitContainer/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+layout_mode = 2
+main = NodePath("../../../../..")
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
+
+[node name="DownButton" parent="SplitContainer/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+layout_mode = 2
+main = NodePath("../../../../..")
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])

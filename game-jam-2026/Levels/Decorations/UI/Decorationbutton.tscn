@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dlibfh63udovi"]
+
+[ext_resource type="Script" uid="uid://cxkkiiyqpi3fd" path="res://Levels/Decorations/UI/decorationbutton.gd" id="2_30jvm"]
+
+[node name="DecorationButton" type="TextureButton" unique_id=1475077277]
+script = ExtResource("2_30jvm")
