@@ -1,13 +1,15 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_en3v0"]
-[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_fwep2"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_ehfyt"]
+[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_p6o33"]
+[ext_resource type="Texture2D" path="res://assets/objects/parrucca.png" id="3_blb6l"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="4_ojei8"]
 
-[node name="CharacterInterface" type="Control" unique_id=1239138290]
+[node name="Else" type="Control" unique_id=1239138290]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_en3v0")
-character = ExtResource("2_fwep2")
+script = ExtResource("1_ehfyt")
+character = ExtResource("2_p6o33")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
@@ -20,7 +22,7 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_fwep2")
+texture = ExtResource("2_p6o33")
 stretch_mode = 5
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
@@ -33,6 +35,7 @@ offset_top = -128.0
 offset_right = 256.0
 offset_bottom = 192.0
 grow_horizontal = 2
+texture = ExtResource("3_blb6l")
 
 [node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]
 layout_mode = 1
@@ -61,6 +64,7 @@ offset_right = 128.0
 offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_ojei8")
 
 [node name="Center" type="Control" parent="." unique_id=1720084448]
 layout_mode = 1
