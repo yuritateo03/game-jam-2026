@@ -14,4 +14,5 @@ ala pipistrello : #Horror, #Violet, ##Animals, ##Goth
 denti : #Horror, #White, ##Goth, ##Animals
 fiore : #Cute, #Yellow, ##Floral, ##Wedding
 sangue : #Horror, #Red, ##Western, ##Goth
-spilla : #Elegant, #Grey, ##Finance, ##Wedding
+spilla : #Elegant, #Grey, ##Finance, ##Wedding, ##Angelic
+trucco : #Cute, #White, ##Floreal, ##Wedding, ##Angelic
