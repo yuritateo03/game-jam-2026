@@ -1,3 +1,3 @@
 extends Node
 
-var nome : String = ""
+var nome : String
