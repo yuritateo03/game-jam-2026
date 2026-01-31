@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://da4hrva3weruh"]
+
+[ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="1_qty7b"]
+[ext_resource type="Texture2D" uid="uid://bx2tewua6amyn" path="res://assets/gui/rosy 2.png" id="2_1jwpg"]
+
+[node name="PortraitTest" type="Control" unique_id=365736390]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=214639502]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 768.0
+offset_top = 349.0
+offset_right = -765.0
+offset_bottom = -285.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1jwpg")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1006902115]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -739.5
+offset_top = -207.0
+offset_right = 739.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_qty7b")
+
+[node name="portrait_desc" type="Label" parent="TextureRect" unique_id=259689006]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -707.0
+offset_top = -187.0
+offset_right = 707.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
