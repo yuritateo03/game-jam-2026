@@ -4,12 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://bupy6gjmdol5" path="res://icon.svg" id="1_ovnwc"]
 [ext_resource type="PackedScene" uid="uid://1b8d0g6jatmv" path="res://Levels/CharacterInterface.tscn" id="2_7ugy3"]
 [ext_resource type="PackedScene" uid="uid://c7uvsf2j4gksx" path="res://Levels/Decorations/UI/PositionButton.tscn" id="2_dncm7"]
+[ext_resource type="Texture2D" uid="uid://cwxu2i0u1sr88" path="res://assets/characters/else.png" id="3_gkx6n"]
 [ext_resource type="Script" uid="uid://oit62jpmos5h" path="res://Levels/Decorations/TagsResource/DecoRes.gd" id="3_pm182"]
+[ext_resource type="Texture2D" uid="uid://bx2tewua6amyn" path="res://assets/gui/rosy 2.png" id="4_ndu1b"]
 [ext_resource type="Script" uid="uid://dlcpo27qodt3" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_vo7st"]
 [ext_resource type="Script" uid="uid://cgxru8smay6v3" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="5_7ugy3"]
+[ext_resource type="Texture2D" uid="uid://lkfnq34b1b6d" path="res://assets/characters/Guglielmo.png" id="5_385d4"]
 [ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_774x7"]
 [ext_resource type="Texture2D" uid="uid://kjqn3jc8om73" path="res://assets/objects/cappuccio.png" id="6_wa8mu"]
 [ext_resource type="Texture2D" uid="uid://56snc675a3ix" path="res://assets/objects/parrucca.png" id="10_0gyb6"]
+[ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
+[ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
 
 [sub_resource type="Resource" id="Resource_5wso4"]
 script = ExtResource("5_7ugy3")
@@ -83,10 +88,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j5hpt")
-characters_to_serve = [NodePath("GameInterface/CharacterInterface"), NodePath("GameInterface/CharacterInterface2"), NodePath("GameInterface/CharacterInterface3")]
+characters_to_serve = [NodePath("GameInterface/Else"), NodePath("GameInterface/Rosy"), NodePath("GameInterface/Guglielmo")]
 
 [node name="Background" type="TextureRect" parent="." unique_id=1420005651]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -101,8 +105,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-split_offsets = PackedInt32Array(-51)
-split_offset = -51
+split_offsets = PackedInt32Array(-100, 100)
+split_offset = -100
 metadata/_edit_lock_ = true
 
 [node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
@@ -121,30 +125,34 @@ text = "La tua richiesta qui"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CharacterInterface" parent="GameInterface" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
-visible = false
+[node name="Else" parent="GameInterface" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
 layout_mode = 2
+character = ExtResource("3_gkx6n")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
-[node name="CharacterRect" parent="GameInterface/CharacterInterface" index="0" unique_id=2016840858]
+[node name="CharacterRect" parent="GameInterface/Else" index="0" unique_id=2016840858]
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
 
-[node name="CharacterInterface2" parent="GameInterface" unique_id=1458582970 instance=ExtResource("2_7ugy3")]
+[node name="Rosy" parent="GameInterface" unique_id=1458582970 instance=ExtResource("2_7ugy3")]
 visible = false
 layout_mode = 2
+character = ExtResource("4_ndu1b")
+query = "La richiesta di rosy"
 
-[node name="CharacterRect" parent="GameInterface/CharacterInterface2" index="0" unique_id=2016840858]
+[node name="CharacterRect" parent="GameInterface/Rosy" index="0" unique_id=2016840858]
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
 
-[node name="CharacterInterface3" parent="GameInterface" unique_id=817062701 instance=ExtResource("2_7ugy3")]
+[node name="Guglielmo" parent="GameInterface" unique_id=817062701 instance=ExtResource("2_7ugy3")]
 visible = false
 layout_mode = 2
+character = ExtResource("5_385d4")
+query = "La richiesta di Guglielo"
 
-[node name="CharacterRect" parent="GameInterface/CharacterInterface3" index="0" unique_id=2016840858]
+[node name="CharacterRect" parent="GameInterface/Guglielmo" index="0" unique_id=2016840858]
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
@@ -175,7 +183,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1573459837]
-wait_time = 3.0
+wait_time = 10.0
 one_shot = true
 
 [node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
@@ -212,6 +220,7 @@ main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
 
 [node name="ResultLayer" type="CanvasLayer" parent="." unique_id=2101719848]
+visible = false
 
 [node name="Control" type="Control" parent="ResultLayer" unique_id=1013403897]
 layout_mode = 3
@@ -295,6 +304,18 @@ stretch_mode = 5
 [node name="GalleryLayer" type="CanvasLayer" parent="." unique_id=574671102]
 visible = false
 
+[node name="Control" parent="GalleryLayer" unique_id=952706856 instance=ExtResource("11_0gyb6")]
+
+[node name="ExitGalleryButton" type="TextureButton" parent="GalleryLayer/Control" unique_id=1710230407]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+texture_normal = ExtResource("12_vqjuy")
+
 [node name="PauseLayer" type="CanvasLayer" parent="." unique_id=276146126]
 visible = false
 
@@ -326,7 +347,12 @@ vertical_alignment = 1
 [connection signal="timeout" from="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel/Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="GameInterface/VSplitContainer/Time_PauseContainer/PauseButton" to="." method="_on_pause_button_pressed"]
 [connection signal="pressed" from="ResultLayer/Control/TitleContainer/ConfermResultButton" to="." method="_on_conferm_result_button_pressed"]
+[connection signal="pressed" from="GalleryLayer/Control/HBoxContainer/Portrait1" to="." method="_on_portrait_1_pressed"]
+[connection signal="pressed" from="GalleryLayer/Control/HBoxContainer/Portrait2" to="." method="_on_portrait_2_pressed"]
+[connection signal="pressed" from="GalleryLayer/Control/HBoxContainer/Portrait3" to="." method="_on_portrait_3_pressed"]
+[connection signal="pressed" from="GalleryLayer/Control/ExitGalleryButton" to="." method="_on_exit_gallery_button_pressed"]
 
-[editable path="GameInterface/CharacterInterface"]
-[editable path="GameInterface/CharacterInterface2"]
-[editable path="GameInterface/CharacterInterface3"]
+[editable path="GameInterface/Else"]
+[editable path="GameInterface/Rosy"]
+[editable path="GameInterface/Guglielmo"]
+[editable path="GalleryLayer/Control"]

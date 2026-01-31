@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bi4y2f4v11sul"]
+[gd_scene format=3 uid="uid://bltk17g0rspx1"]
 
-[ext_resource type="Script" uid="uid://bubqla4si1w0y" path="res://scripts/scenes/galleryInGame.gd" id="1_c8g65"]
+[ext_resource type="Script" path="res://scripts/scenes/galleryInGame.gd" id="1_c8g65"]
 [ext_resource type="Texture2D" uid="uid://cwoaf74ruto42" path="res://assets/gui/stanza.png" id="2_lc104"]
 [ext_resource type="FontFile" uid="uid://rawcgf4dtb73" path="res://assets/font/Google_Sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf" id="4_awa8t"]
 [ext_resource type="Texture2D" uid="uid://d0ybvoao26k7w" path="res://scripts/gui/start group.png" id="5_kjb2p"]
@@ -251,9 +251,6 @@ grow_vertical = 2
 texture = ExtResource("12_c5mem")
 expand_mode = 1
 
-[connection signal="pressed" from="HBoxContainer/Portrait1" to="." method="_on_portrait_1_pressed"]
-[connection signal="pressed" from="HBoxContainer/Portrait2" to="." method="_on_portrait_2_pressed"]
-[connection signal="pressed" from="HBoxContainer/Portrait3" to="." method="_on_portrait_3_pressed"]
 [connection signal="pressed" from="Focus/destra" to="." method="_on_destra_pressed"]
 [connection signal="pressed" from="Focus/sinistra" to="." method="_on_sinistra_pressed"]
 [connection signal="pressed" from="Focus/back" to="." method="_on_back_pressed"]

@@ -10,6 +10,7 @@ class_name CharacterInterface
 
 @export var character : Texture
 @export_multiline  var query : String
+@export var char_name : String
 
 
 func _ready() -> void:

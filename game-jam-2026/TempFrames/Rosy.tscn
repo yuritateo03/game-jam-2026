@@ -1,14 +1,16 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_dwewv"]
-[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_hck88"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_7xy1q"]
+[ext_resource type="Texture2D" path="res://assets/gui/rosy 2.png" id="2_uue80"]
+[ext_resource type="Texture2D" path="res://assets/objects/cappuccio.png" id="3_8llxi"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="4_i7ibm"]
 
-[node name="CharacterInterface" type="Control" unique_id=1239138290]
+[node name="Rosy" type="Control" unique_id=1458582970]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_dwewv")
-character = ExtResource("2_hck88")
-query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+script = ExtResource("1_7xy1q")
+character = ExtResource("2_uue80")
+query = "La richiesta di rosy"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
@@ -20,7 +22,7 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_hck88")
+texture = ExtResource("2_uue80")
 stretch_mode = 5
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
@@ -33,6 +35,7 @@ offset_top = -128.0
 offset_right = 256.0
 offset_bottom = 192.0
 grow_horizontal = 2
+texture = ExtResource("3_8llxi")
 
 [node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]
 layout_mode = 1
@@ -61,6 +64,7 @@ offset_right = 128.0
 offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_i7ibm")
 
 [node name="Center" type="Control" parent="." unique_id=1720084448]
 layout_mode = 1
