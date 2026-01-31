@@ -21,5 +21,5 @@
 - Storyline e livelli (FINE TASK)
 - Mockup GUI completato (FINE TASK)
 - Progressi su musica e VFX
-- Progressi sul programming del gioco
+- Progressi sul programming del gioco, inizio dell'implementazione della GUI
 - Progressi sugli assets
