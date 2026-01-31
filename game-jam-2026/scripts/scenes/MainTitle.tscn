@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://c6n1eawwhd4pg"]
+
+[ext_resource type="Texture2D" uid="uid://cwoaf74ruto42" path="res://assets/gui/stanza.png" id="1_05tv3"]
+[ext_resource type="FontFile" uid="uid://rawcgf4dtb73" path="res://assets/font/Google_Sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf" id="3_ija45"]
+[ext_resource type="Texture2D" uid="uid://dhs354aql4s4m" path="res://assets/gui/Guglielmo_GUI_Iniziale.png" id="4_3hp52"]
+[ext_resource type="Texture2D" uid="uid://ctuj7fkyctfxh" path="res://assets/gui/Else_GUI_Iniziale.png" id="5_ll54c"]
+[ext_resource type="Texture2D" uid="uid://bv434tutmmtca" path="res://assets/gui/Rosy_GUI_Iniziale.png" id="6_fp7vw"]
+
+[node name="Control" type="Control" unique_id=952706856]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sfondo" type="TextureRect" parent="." unique_id=1254689822]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_05tv3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=838155356]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 159.0
+offset_top = 633.0
+offset_right = -61.0
+offset_bottom = -147.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("3_ija45")
+theme_override_font_sizes/normal_font_size = 200
+theme_override_font_sizes/bold_font_size = 200
+text = "Elle's Boutique"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Galleria" type="Button" parent="." unique_id=1642329597]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Impostazioni" type="Button" parent="." unique_id=1377000380]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1701487480]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 349.0
+offset_right = 1670.0
+offset_bottom = 649.0
+
+[node name="Gioca" type="Button" parent="HBoxContainer" unique_id=291167988]
+layout_mode = 2
+size_flags_horizontal = 0
+icon = ExtResource("4_3hp52")
+
+[node name="Gioca Title" type="RichTextLabel" parent="HBoxContainer/Gioca" unique_id=1708729582]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.3
+anchor_right = 0.9850001
+anchor_bottom = -0.033
+offset_right = -0.05001831
+offset_bottom = 4.8999996
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("3_ija45")
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 30
+text = "Start!"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Gallery" type="Button" parent="HBoxContainer" unique_id=666080213]
+layout_mode = 2
+size_flags_horizontal = 6
+icon = ExtResource("5_ll54c")
+
+[node name="Gallery Title" type="RichTextLabel" parent="HBoxContainer/Gallery" unique_id=1230865866]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.003
+anchor_top = -0.3
+anchor_right = 1.0
+anchor_bottom = -0.033
+offset_left = 0.00999999
+offset_right = -4.0
+offset_bottom = 4.8999996
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("3_ija45")
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 30
+text = "Gallery"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Gioca3" type="Button" parent="HBoxContainer" unique_id=2071720579]
+layout_mode = 2
+icon = ExtResource("6_fp7vw")
+
+[node name="Settings Title" type="RichTextLabel" parent="HBoxContainer/Gioca3" unique_id=834183410]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.3
+anchor_right = 1.0
+anchor_bottom = -0.033
+offset_left = -2.0
+offset_right = -7.0
+offset_bottom = 4.8999996
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("3_ija45")
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 30
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 2
