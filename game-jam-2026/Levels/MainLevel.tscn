@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://8yei28an8wad" path="res://Levels/LevelController.gd" id="1_j5hpt"]
 [ext_resource type="Texture2D" uid="uid://bupy6gjmdol5" path="res://icon.svg" id="1_ovnwc"]
 [ext_resource type="PackedScene" uid="uid://1b8d0g6jatmv" path="res://Levels/CharacterInterface.tscn" id="2_7ugy3"]
+[ext_resource type="Texture2D" uid="uid://ddlh0t7reekkw" path="res://assets/gui/Request_Background.png" id="2_btxl3"]
 [ext_resource type="PackedScene" uid="uid://c7uvsf2j4gksx" path="res://Levels/Decorations/UI/PositionButton.tscn" id="2_dncm7"]
+[ext_resource type="Texture2D" uid="uid://cwoaf74ruto42" path="res://assets/gui/stanza.png" id="2_ikh7f"]
 [ext_resource type="Texture2D" uid="uid://cwxu2i0u1sr88" path="res://assets/characters/else.png" id="3_gkx6n"]
 [ext_resource type="Script" uid="uid://oit62jpmos5h" path="res://Levels/Decorations/TagsResource/DecoRes.gd" id="3_pm182"]
 [ext_resource type="Texture2D" uid="uid://bx2tewua6amyn" path="res://assets/gui/rosy 2.png" id="4_ndu1b"]
@@ -19,11 +21,26 @@
 [ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
 [ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
-[ext_resource type="Texture2D" uid="uid://cqrrj287l6j4h" path="res://assets/masks/mask_yel.png" id="16_1wdlg"]
+[ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
+[ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
+[ext_resource type="Texture2D" uid="uid://c0xj03a8jxtbr" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
+[ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
-[ext_resource type="Texture2D" uid="uid://ucemduqwraei" path="res://assets/masks/mask_grey.png" id="18_86oho"]
+[ext_resource type="Texture2D" uid="uid://cewphv6ffdyku" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
 [ext_resource type="Script" uid="uid://dn3e0atjo4qy8" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
+[ext_resource type="Texture2D" uid="uid://d0xujppg2lov0" path="res://assets/gui/up_button.png" id="25_o2g6k"]
+[ext_resource type="Texture2D" uid="uid://sksj07pijsdv" path="res://assets/gui/centre_button.png" id="28_5p8ax"]
+[ext_resource type="Texture2D" uid="uid://bxi7lrfdg6fwg" path="res://assets/gui/down_button.png" id="29_ed34g"]
+[ext_resource type="Texture2D" uid="uid://dc7dt0w03i2fq" path="res://assets/gui/Frame_Vertical.png" id="30_o2g6k"]
+[ext_resource type="Texture2D" uid="uid://r62632guedcw" path="res://assets/gui/finish_button.png" id="31_5p8ax"]
+[ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="31_ed34g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tytca"]
+texture = ExtResource("2_btxl3")
+
+[sub_resource type="Theme" id="Theme_41oa5"]
+Panel/styles/panel = SubResource("StyleBoxTexture_tytca")
 
 [sub_resource type="Resource" id="Resource_385d4"]
 script = ExtResource("5_7ugy3")
@@ -38,6 +55,22 @@ theme = 1
 colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
 subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o0k17"]
+texture = ExtResource("14_41oa5")
+
+[sub_resource type="Theme" id="Theme_lp55d"]
+Label/styles/normal = SubResource("StyleBoxTexture_o0k17")
+
+[sub_resource type="LabelSettings" id="LabelSettings_41oa5"]
+font_size = 60
+font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0u5jo"]
+texture = ExtResource("16_l22rq")
+
+[sub_resource type="Theme" id="Theme_l22rq"]
+Panel/styles/panel = SubResource("StyleBoxTexture_0u5jo")
 
 [sub_resource type="Resource" id="Resource_86oho"]
 script = ExtResource("5_7ugy3")
@@ -136,6 +169,22 @@ image = ExtResource("1_ovnwc")
 tags = SubResource("Resource_7ugy3")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mdio0"]
+texture = ExtResource("31_ed34g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n5dk2"]
+texture = ExtResource("31_ed34g")
+
+[sub_resource type="Theme" id="Theme_ed34g"]
+LineEdit/styles/normal = SubResource("StyleBoxTexture_mdio0")
+TextEdit/styles/normal = SubResource("StyleBoxTexture_n5dk2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ed34g"]
+texture = ExtResource("16_l22rq")
+
+[sub_resource type="Theme" id="Theme_n5dk2"]
+Panel/styles/panel = SubResource("StyleBoxTexture_ed34g")
+
 [node name="MainLevel" type="Control" unique_id=623848505 node_paths=PackedStringArray("characters_to_serve")]
 layout_mode = 3
 anchors_preset = 15
@@ -151,8 +200,11 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -152.0
+offset_bottom = 152.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_ikh7f")
 
 [node name="GameInterface" type="SplitContainer" parent="." unique_id=1560537296]
 layout_mode = 1
@@ -166,16 +218,24 @@ split_offset = -1
 metadata/_edit_lock_ = true
 
 [node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
+custom_minimum_size = Vector2(700, 500)
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
+theme = SubResource("Theme_41oa5")
 
 [node name="QueryText" type="RichTextLabel" parent="GameInterface/QueryPanel" unique_id=200240675]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 122.0
+offset_right = -65.0
+offset_bottom = -122.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/default_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 theme_override_font_sizes/normal_font_size = 32
 text = "La tua richiesta qui"
 horizontal_alignment = 1
@@ -229,6 +289,7 @@ split_offset = 100
 layout_mode = 2
 
 [node name="TimerPanel" type="Panel" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=123704600]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -239,8 +300,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_lp55d")
 theme_override_font_sizes/font_size = 40
 text = "1:00"
+label_settings = SubResource("LabelSettings_41oa5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -251,11 +314,12 @@ one_shot = true
 [node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
 process_mode = 3
 layout_mode = 2
-texture_normal = ExtResource("1_ovnwc")
+texture_normal = ExtResource("15_l22rq")
 
 [node name="ButtonsPanel" type="Panel" parent="GameInterface/VSplitContainer" unique_id=383756867]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = SubResource("Theme_l22rq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="GameInterface/VSplitContainer/ButtonsPanel" unique_id=1337541968]
 layout_mode = 1
@@ -268,21 +332,25 @@ alignment = 1
 
 [node name="MaskButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
+texture_normal = ExtResource("1_ovnwc")
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_qcvw1"), SubResource("Resource_tytca")])
 
 [node name="UpButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=1040566983 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
+texture_normal = ExtResource("25_o2g6k")
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_bfvw3"), SubResource("Resource_ndu1b")])
 
 [node name="CenterButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
+texture_normal = ExtResource("28_5p8ax")
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_wa8mu"), SubResource("Resource_vqjuy")])
 
 [node name="DownButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
+texture_normal = ExtResource("29_ed34g")
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
 
@@ -305,13 +373,14 @@ anchor_top = 0.178
 anchor_right = 0.90000004
 anchor_bottom = 0.652
 offset_left = -0.6401367
-offset_top = -0.2400055
+offset_top = -120.16
 offset_right = -0.00012207031
 offset_bottom = -0.16003418
 size_flags_horizontal = 4
-texture = ExtResource("1_ovnwc")
+texture = ExtResource("30_o2g6k")
 
 [node name="ImageLimit" type="PanelContainer" parent="ResultLayer/Control/Frame" unique_id=402536305]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -335,6 +404,7 @@ offset_top = -8.040009
 offset_right = -7.040039
 offset_bottom = 0.39996338
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 theme_override_font_sizes/font_size = 50
 text = "Il tuo commento qui"
 horizontal_alignment = 1
@@ -354,18 +424,22 @@ offset_bottom = -0.12005615
 
 [node name="Label" type="Label" parent="ResultLayer/Control/TitleContainer" unique_id=544030827]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 theme_override_font_sizes/font_size = 30
 text = "Dai un titolo al tuo capolavoro"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextEdit" type="TextEdit" parent="ResultLayer/Control/TitleContainer" unique_id=464150785]
+[node name="LineEdit" type="LineEdit" parent="ResultLayer/Control/TitleContainer" unique_id=645899806]
 custom_minimum_size = Vector2(50, 80)
 layout_mode = 2
+theme = SubResource("Theme_ed34g")
+theme_override_colors/font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
+alignment = 1
 
 [node name="ConfermResultButton" type="TextureButton" parent="ResultLayer/Control/TitleContainer" unique_id=1467431395]
 layout_mode = 2
-texture_normal = ExtResource("1_ovnwc")
+texture_normal = ExtResource("31_5p8ax")
 stretch_mode = 5
 
 [node name="GalleryLayer" type="CanvasLayer" parent="." unique_id=574671102]
@@ -414,19 +488,37 @@ vertical_alignment = 1
 [node name="EndLayer" type="CanvasLayer" parent="." unique_id=481143384]
 visible = false
 
-[node name="EndLabel" type="Label" parent="EndLayer" unique_id=890672501]
-anchors_preset = 14
-anchor_top = 0.5
+[node name="Panel" type="Panel" parent="EndLayer" unique_id=2099187303]
+anchors_preset = 15
 anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = -11.5
-offset_bottom = 11.5
+anchor_bottom = 1.0
+offset_left = 256.0
+offset_top = 64.0
+offset_right = -256.0
+offset_bottom = -144.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_n5dk2")
+
+[node name="EndLabel" type="Label" parent="EndLayer/Panel" unique_id=890672501]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -396.0
+offset_top = -27.5
+offset_right = 396.0
+offset_bottom = 113.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 theme_override_font_sizes/font_size = 50
 text = "Ottimo lavoro. Hai terminato la tua prima giornata."
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="ExitLevelButton" type="TextureButton" parent="EndLayer" unique_id=1216767710]
 anchors_preset = 1

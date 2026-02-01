@@ -83,7 +83,7 @@ func _on_pause_button_pressed() -> void:
 	pause_layer.visible = !pause_layer.visible
 
 func _on_conferm_result_button_pressed() -> void:
-	var text_edit : TextEdit = result_layer.get_node("Control/TitleContainer/TextEdit")
+	var text_edit : LineEdit = result_layer.get_node("Control/TitleContainer/LineEdit")
 	scene_name_to_save = text_edit.text
 	show_gallery()
 	var new_frame : CharacterInterface = result_layer.get_node("Control/Frame/ImageLimit").get_child(0)

@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://c7uvsf2j4gksx"]
 
-[ext_resource type="Texture2D" uid="uid://bupy6gjmdol5" path="res://icon.svg" id="1_rknhf"]
 [ext_resource type="Script" uid="uid://0us33otyxyfm" path="res://Levels/Decorations/UI/position_button.gd" id="2_dbgq3"]
 
 [node name="UpButton" type="TextureButton" unique_id=394588692]
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture_normal = ExtResource("1_rknhf")
 script = ExtResource("2_dbgq3")
 
 [node name="DecorationContainer" type="HBoxContainer" parent="." unique_id=328497667]
