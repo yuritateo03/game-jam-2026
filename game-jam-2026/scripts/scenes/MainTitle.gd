@@ -12,11 +12,18 @@ extends Control
 func _ready() -> void:
 	pass
 
+func _input(event):
+	if event.is_action_pressed("invio"):
+		on_start_button_pressed()
+
 func on_start_button_pressed() -> void:
-	if (label_nome.text.is_empty() == false):
-		Global.nome = label_nome.text
+	if (label_nome.text.length() <= 15):
+		if (label_nome.text.is_empty() == false):
+			Global.nome = label_nome.text
+		else:
+			Global.nome = "Player"
 	else:
-		Global.nome = "Player"
+		Global.nome = label_nome.text.substr(0,15)
 	title.text = Global.nome + "'s boutique!"
 	focus_area.visible = false;
 
