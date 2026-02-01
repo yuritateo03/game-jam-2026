@@ -20,9 +20,11 @@
 [ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
 [ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
+[ext_resource type="AudioStream" uid="uid://5x4h8jkwr514" path="res://sounds/music/rosy_complete.wav" id="14_n5dk2"]
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
 [ext_resource type="Texture2D" uid="uid://cxfrk4owv54jg" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
+[ext_resource type="FontFile" uid="uid://dqaals4ftc3pf" path="res://assets/font/Google_Sans/static/GoogleSans_17pt-Regular.ttf" id="16_n5dk2"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
 [ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Texture2D" uid="uid://dk4m0l3ekt5ue" path="res://assets/masks/m1_red.png" id="21_okeeu"]
@@ -36,6 +38,9 @@
 [ext_resource type="Texture2D" uid="uid://sksj07pijsdv" path="res://assets/gui/centre_button.png" id="28_5p8ax"]
 [ext_resource type="Texture2D" uid="uid://m4bot0g2pua8" path="res://assets/masks/m1_sky.png" id="29_e1gx4"]
 [ext_resource type="Texture2D" uid="uid://bxi7lrfdg6fwg" path="res://assets/gui/down_button.png" id="29_ed34g"]
+[ext_resource type="Resource" uid="uid://wq37ojeoeuo6" path="res://Levels/Decorations/TagsResource/Colors/White.tres" id="29_n5dk2"]
+[ext_resource type="Resource" uid="uid://c1aleupw83xma" path="res://Levels/Decorations/TagsResource/SubTheme/Wedding.tres" id="29_s6rto"]
+[ext_resource type="Texture2D" uid="uid://gm0qflr7jlgc" path="res://assets/objects/bombetta.png" id="30_fbttw"]
 [ext_resource type="Texture2D" uid="uid://dc7dt0w03i2fq" path="res://assets/gui/Frame_Vertical.png" id="30_o2g6k"]
 [ext_resource type="Resource" uid="uid://drpe5f4bonybv" path="res://Levels/Decorations/TagsResource/Colors/Blue.tres" id="30_uics0"]
 [ext_resource type="Texture2D" uid="uid://r62632guedcw" path="res://assets/gui/finish_button.png" id="31_5p8ax"]
@@ -81,6 +86,11 @@
 [ext_resource type="Texture2D" uid="uid://g502atlq1b5e" path="res://assets/objects/headp.png" id="71_vcrf8"]
 [ext_resource type="Resource" uid="uid://dtupx65op8xek" path="res://Levels/Decorations/TagsResource/SubTheme/Disco.tres" id="72_8part"]
 [ext_resource type="Texture2D" uid="uid://coby6yvcnnxgs" path="res://assets/objects/choker.png" id="75_w6nax"]
+[ext_resource type="Resource" uid="uid://b3h04eax187dj" path="res://Levels/Decorations/TagsResource/Colors/Black.tres" id="31_s6rto"]
+[ext_resource type="Texture2D" uid="uid://d2pf3c1sg31o0" path="res://assets/objects/sangue_sinistro.png" id="32_3b48f"]
+[ext_resource type="Texture2D" uid="uid://dk80jj35kr57q" path="res://assets/objects/baffi.png" id="32_4prt6"]
+[ext_resource type="Resource" uid="uid://dtupx65op8xek" path="res://Levels/Decorations/TagsResource/SubTheme/Disco.tres" id="33_3b48f"]
+>>>>>>> main
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tytca"]
 texture = ExtResource("2_btxl3")
@@ -101,16 +111,6 @@ theme = 1
 colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
 subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o0k17"]
-texture = ExtResource("14_41oa5")
-
-[sub_resource type="Theme" id="Theme_lp55d"]
-Label/styles/normal = SubResource("StyleBoxTexture_o0k17")
-
-[sub_resource type="LabelSettings" id="LabelSettings_41oa5"]
-font_size = 60
-font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0u5jo"]
 texture = ExtResource("16_l22rq")
@@ -637,6 +637,7 @@ metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="Resource" id="Resource_ep8dq"]
 script = ExtResource("5_7ugy3")
+name = "denti da vampiro"
 position = 2
 theme = 1
 colors = Array[ExtResource("4_vo7st")]([ExtResource("36_6arcx"), ExtResource("42_a18ag")])
@@ -695,8 +696,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-split_offsets = PackedInt32Array(-1)
-split_offset = -1
+split_offsets = PackedInt32Array(51)
+split_offset = 51
 metadata/_edit_lock_ = true
 
 [node name="QueryPanel" type="NinePatchRect" parent="GameInterface" unique_id=884560627]
@@ -730,27 +731,40 @@ vertical_alignment = 1
 
 [node name="Else" parent="GameInterface" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
 visible = false
+layout_direction = 3
 layout_mode = 2
 character = ExtResource("3_gkx6n")
-query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+query = "Salve, volevo farle i miei più sinceri complimenti per la sua bottega, mi chiamo Else e sono in cerca di una maschera che possa valorizzarmi durante il prossimo Galà Mascherato! 
+
+Il tema è anni 20, e adorerei indossare un bel copricapo per l’occasione. Solitamente non preferisco colori particolarmente accesi, ma forse per oggi ti lascerò carta bianca!"
 query_threshold = 30
 pos_response = "BRAVO"
 neg_response = "NON C'HAI STILE"
 query_tags_pos = Array[ExtResource("5_7ugy3")]([SubResource("Resource_385d4")])
 query_tags_neg = Array[ExtResource("5_7ugy3")]([SubResource("Resource_1wdlg")])
 
-[node name="CharacterRect" parent="GameInterface/Else" index="0" unique_id=2016840858]
+[node name="Elsemusic" type="AudioStreamPlayer" parent="GameInterface/Else" unique_id=1644364026]
+
+[node name="CharacterRect" parent="GameInterface/Else" index="1" unique_id=2016840858]
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
 
 [node name="Rosy" parent="GameInterface" unique_id=1458582970 instance=ExtResource("2_7ugy3")]
 visible = false
+layout_direction = 2
 layout_mode = 2
 character = ExtResource("4_ndu1b")
-query = "La richiesta di rosy"
+query = "Hihi! Ciao! Come stai? Vorrei davvero tanto tanto tanto tanto una maschera adatta alla mia festa di compleanno tema hippie!!! Ho già comprato dei pantaloni a zampa d’elefante celesti, un paio di sandali e un top a fiori da far sgranare gli occhi a chiunque!
 
-[node name="CharacterRect" parent="GameInterface/Rosy" index="0" unique_id=2016840858]
+Vorrei che mi aiutassi! Ma ti prego nulla di nero NULLAAAAAAAAAA!! Scusami, forse ho alzato la voce! Scusamiscusa-"
+
+[node name="Rosymusic" type="AudioStreamPlayer" parent="GameInterface/Rosy" unique_id=1123489507]
+stream = ExtResource("14_n5dk2")
+autoplay = true
+mix_target = 1
+
+[node name="CharacterRect" parent="GameInterface/Rosy" index="1" unique_id=2016840858]
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
@@ -759,9 +773,13 @@ offset_top = -0.5200043
 visible = false
 layout_mode = 2
 character = ExtResource("5_385d4")
-query = "La richiesta di Guglielo"
+query = "Yo! Sono Guglielmo, Else mi ha parlato molto bene del tuo lavoro ed ero curioso... ecco cioè... ho un problema! Sono stato costretto a partecipare ad una festa a tema Horror!  Io detesto... i film horror, davvero!! 
 
-[node name="CharacterRect" parent="GameInterface/Guglielmo" index="0" unique_id=2016840858]
+Se vedo il sangue... svengo!!! Il colore rosso lo detesto, il giallo invece lo ADO-RO!, capisco possa essere difficile, ma ti prego di aiutarmi!!!"
+
+[node name="Guglielmomusic" type="AudioStreamPlayer" parent="GameInterface/Guglielmo" unique_id=706949892]
+
+[node name="CharacterRect" parent="GameInterface/Guglielmo" index="1" unique_id=2016840858]
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
@@ -774,29 +792,40 @@ split_offset = 100
 
 [node name="Time_PauseContainer" type="HSplitContainer" parent="GameInterface/VSplitContainer" unique_id=556006061]
 layout_mode = 2
+size_flags_horizontal = 8
 
-[node name="TimerPanel" type="Panel" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=123704600]
-self_modulate = Color(1, 1, 1, 0)
+[node name="TimerPanel" type="NinePatchRect" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1227977915]
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=141728070]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_lp55d")
-theme_override_font_sizes/font_size = 40
-text = "1:00"
-label_settings = SubResource("LabelSettings_41oa5")
-horizontal_alignment = 1
-vertical_alignment = 1
+texture = ExtResource("14_41oa5")
+region_rect = Rect2(3, 2, 282, 125)
+patch_margin_left = 23
+patch_margin_top = 13
+patch_margin_right = 119
+patch_margin_bottom = 14
 
 [node name="Timer" type="Timer" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1573459837]
 wait_time = 3.0
 one_shot = true
+
+[node name="Label" type="Label" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1925982344]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.825
+anchor_top = 0.5
+anchor_right = 0.84
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -48.0
+offset_right = -100.0
+offset_bottom = 48.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
+theme_override_fonts/font = ExtResource("16_n5dk2")
+theme_override_font_sizes/font_size = 80
+text = "1:00"
 
 [node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
 process_mode = 3
@@ -929,7 +958,6 @@ texture_normal = ExtResource("31_5p8ax")
 stretch_mode = 5
 
 [node name="GalleryLayer" type="CanvasLayer" parent="." unique_id=574671102]
-visible = false
 
 [node name="Control" parent="GalleryLayer" unique_id=952706856 instance=ExtResource("11_0gyb6")]
 
@@ -942,6 +970,13 @@ offset_left = -40.0
 offset_bottom = 40.0
 grow_horizontal = 0
 texture_normal = ExtResource("12_vqjuy")
+
+[node name="Piano" type="AudioStreamPlayer" parent="GalleryLayer/Control" unique_id=883885684]
+bus = &"SFX"
+
+[node name="Build" type="AudioStreamPlayer" parent="GalleryLayer/Control" unique_id=242202263]
+stream = ExtResource("36_mdio0")
+bus = &"SFX"
 
 [node name="PauseLayer" type="CanvasLayer" parent="." unique_id=276146126]
 visible = false
