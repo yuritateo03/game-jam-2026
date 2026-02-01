@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="SubThemeTag" format=3 uid="uid://dfcvn28fyxo45"]
-
-[ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="1_cffon"]
-
-[resource]
-script = ExtResource("1_cffon")
-name = "Western"
-metadata/_custom_type_script = "uid://d30a6rhwi6wa"

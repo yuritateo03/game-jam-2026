@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="SubThemeTag" format=3 uid="uid://c2wrpa6uuwdj0"]
-
-[ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="1_6b7n1"]
-
-[resource]
-script = ExtResource("1_6b7n1")
-name = "Space"
-metadata/_custom_type_script = "uid://d30a6rhwi6wa"
