@@ -9,6 +9,10 @@ size_flags_horizontal = 3
 script = ExtResource("1_q5r52")
 character = ExtResource("2_2h21b")
 query = "La richiesta di Guglielo"
+query = "Yo! Sono Guglielmo, Else mi ha parlato molto bene del tuo lavoro ed ero curioso... ecco cioè... ho un problema! Sono stato costretto a partecipare ad una festa a tema Horror!  Io detesto... i film horror, davvero!! 
+
+Se vedo il sangue... svengo!!! Il colore rosso lo detesto, il giallo invece lo ADO-RO!, capisco possa essere difficile, ma ti prego di aiutarmi!!!"
+>>>>>>> Stashed changes
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1

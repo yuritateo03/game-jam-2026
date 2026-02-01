@@ -4,11 +4,14 @@
 [ext_resource type="Texture2D" path="res://assets/gui/rosy 2.png" id="2_lrc11"]
 
 [node name="Rosy" type="Control" unique_id=1458582970]
+layout_direction = 2
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("1_huowe")
 character = ExtResource("2_lrc11")
-query = "La richiesta di rosy"
+query = "Hihi! Ciao! Come stai? Vorrei davvero tanto tanto tanto tanto una maschera adatta alla mia festa di compleanno tema hippie!!! Ho già comprato dei pantaloni a zampa d’elefante celesti, un paio di sandali e un top a fiori da far sgranare gli occhi a chiunque!
+
+Vorrei che mi aiutassi! Ma ti prego nulla di nero NULLAAAAAAAAAA!! Scusami, forse ho alzato la voce! Scusamiscusa-"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1

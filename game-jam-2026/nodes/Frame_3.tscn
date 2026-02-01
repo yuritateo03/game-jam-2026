@@ -1,5 +1,6 @@
 [gd_scene format=3]
 
+<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_ahubm"]
 [ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_m3gdh"]
 [ext_resource type="Script" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="3_4bvsr"]
@@ -35,6 +36,19 @@ pos_response = "BRAVO"
 neg_response = "NON C'HAI STILE"
 query_tags_pos = Array[ExtResource("3_4bvsr")]([SubResource("Resource_385d4")])
 query_tags_neg = Array[ExtResource("3_4bvsr")]([SubResource("Resource_1wdlg")])
+=======
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_kmmj0"]
+[ext_resource type="Texture2D" path="res://assets/characters/Guglielmo.png" id="2_760a6"]
+
+[node name="Guglielmo" type="Control" unique_id=817062701]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_kmmj0")
+character = ExtResource("2_760a6")
+query = "Yo! Sono Guglielmo, Else mi ha parlato molto bene del tuo lavoro ed ero curioso... ecco cioè... ho un problema! Sono stato costretto a partecipare ad una festa a tema Horror!  Io detesto... i film horror, davvero!! 
+
+Se vedo il sangue... svengo!!! Il colore rosso lo detesto, il giallo invece lo ADO-RO!, capisco possa essere difficile, ma ti prego di aiutarmi!!!"
+>>>>>>> Stashed changes
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
@@ -46,7 +60,11 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+<<<<<<< Updated upstream
 texture = ExtResource("2_m3gdh")
+=======
+texture = ExtResource("2_760a6")
+>>>>>>> Stashed changes
 stretch_mode = 5
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]

@@ -10,6 +10,8 @@ class_name LevelController
 @onready var gallery_layer : CanvasLayer = $GalleryLayer
 @onready var end_layer : CanvasLayer = $EndLayer
 var scene_name_to_save : String
+@onready var build_sound = $GalleryLayer/Control/Build
+@onready var piano_sound = $GalleryLayer/Control/Piano
 
 @export var characters_to_serve : Array[CharacterInterface]
 var turn_idx : int = 0
@@ -91,6 +93,7 @@ func _on_conferm_result_button_pressed() -> void:
 
 
 func _on_portrait_1_pressed() -> void:
+	build_sound.play()
 	var image_limit : Control = gallery_layer.get_node("Control/HBoxContainer/Portrait1/Control")
 	var scene_name = characters_to_serve[turn_idx].name
 	var packed_frame = load("res://TempFrames/" + scene_name + ".tscn")
@@ -107,6 +110,7 @@ func _on_portrait_1_pressed() -> void:
 	ResourceSaver.save(scene, "res://Nodes/Frame_1.tscn")
 
 func _on_portrait_2_pressed() -> void:
+	build_sound.play()
 	var image_limit : Control = gallery_layer.get_node("Control/HBoxContainer/Portrait2/Control2")
 	var scene_name = characters_to_serve[turn_idx].name
 	var packed_frame = load("res://TempFrames/" + scene_name + ".tscn")
@@ -123,6 +127,7 @@ func _on_portrait_2_pressed() -> void:
 	ResourceSaver.save(packed_frame, "res://Nodes/Frame_2.tscn")
 
 func _on_portrait_3_pressed() -> void:
+	build_sound.play()
 	var image_limit : Control = gallery_layer.get_node("Control/HBoxContainer/Portrait3/Control3")
 	var scene_name = characters_to_serve[turn_idx].name
 	var packed_frame = load("res://TempFrames/" + scene_name + ".tscn")

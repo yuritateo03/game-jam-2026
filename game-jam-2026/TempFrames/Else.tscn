@@ -25,11 +25,14 @@ subthemes = Array[ExtResource("6_5f7un")]([ExtResource("9_l2vjc")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [node name="Else" type="Control" unique_id=1239138290]
+layout_direction = 3
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("1_h0vbf")
 character = ExtResource("2_hkwf1")
-query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+query = "Salve, volevo farle i miei più sinceri complimenti per la sua bottega, mi chiamo Else e sono in cerca di una maschera che possa valorizzarmi durante il prossimo Galà Mascherato! 
+
+Il tema è anni 20, e adorerei indossare un bel copricapo per l’occasione. Solitamente non preferisco colori particolarmente accesi, ma forse per oggi ti lascerò carta bianca!"
 query_threshold = 30
 pos_response = "BRAVO"
 neg_response = "NON C'HAI STILE"
