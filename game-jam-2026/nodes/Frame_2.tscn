@@ -1,35 +1,36 @@
-[gd_scene format=3 uid="uid://1b8d0g6jatmv"]
+[gd_scene format=3]
 
-[ext_resource type="Script" uid="uid://dr48uxsmpnmfn" path="res://Levels/character_interface.gd" id="1_awu3a"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_er418"]
+[ext_resource type="Texture2D" path="res://assets/gui/rosy 2.png" id="2_s06g2"]
 
-[node name="CharacterInterface" type="Control" unique_id=1239138290]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Rosy" type="Control" unique_id=1458582970]
+layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_awu3a")
+script = ExtResource("1_er418")
+character = ExtResource("2_s06g2")
+query = "La richiesta di rosy"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_top = 0.119
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+texture = ExtResource("2_s06g2")
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.367
-anchor_top = -0.119
-anchor_right = 0.633
-anchor_bottom = 0.178
+anchor_left = 0.09131204
+anchor_top = -0.00054622296
+anchor_right = 0.92909616
+anchor_bottom = 0.33638653
 offset_left = -0.64001465
 offset_top = 0.5200043
 offset_right = 0.64001465
@@ -41,12 +42,14 @@ metadata/_edit_use_anchors_ = true
 [node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.4
-anchor_top = 0.23700002
-anchor_right = 0.6
-anchor_bottom = 0.356
-offset_top = 0.039978027
-offset_bottom = -0.480011
+anchor_left = 0.289
+anchor_top = 0.35300002
+anchor_right = 0.708
+anchor_bottom = 0.44500002
+offset_left = -0.25402832
+offset_top = -0.055999756
+offset_right = 0.3119812
+offset_bottom = 0.35998535
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 5
@@ -55,13 +58,14 @@ metadata/_edit_use_anchors_ = true
 [node name="Down" type="TextureRect" parent="CharacterRect" unique_id=1132544126]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.43300003
-anchor_top = 0.4
-anchor_right = 0.56700003
-anchor_bottom = 0.55600005
-offset_left = 0.6399536
-offset_right = -0.64001465
-offset_bottom = -0.4800415
+anchor_left = 0.312
+anchor_top = 0.504
+anchor_right = 0.67300004
+anchor_bottom = 0.605
+offset_left = 7.9680023
+offset_top = 0.19198608
+offset_right = 0.32196045
+offset_bottom = 0.039978027
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 3
@@ -69,14 +73,14 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Center" type="Control" parent="." unique_id=1720084448]
 layout_mode = 1
-anchor_left = 0.367
-anchor_top = -0.059000004
-anchor_right = 0.633
-anchor_bottom = 0.59300005
-offset_left = -0.64001465
-offset_top = -0.27999496
-offset_right = 0.64001465
-offset_bottom = -0.44006348
+anchor_left = 0.21900001
+anchor_top = 0.119
+anchor_right = 0.74300003
+anchor_bottom = 0.711
+offset_left = -0.23396301
+offset_top = -0.5200043
+offset_right = 0.30203247
+offset_bottom = 0.11999512
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true

@@ -1,40 +1,42 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_h0vbf"]
-[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_hkwf1"]
-[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="3_kgx51"]
-[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_hlmxi"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="5_oh28g"]
-[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_5f7un"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="7_pl1fo"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="8_b1ovf"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="9_l2vjc"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_kgx51"]
+[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_hlmxi"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="3_oh28g"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_5f7un"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="5_pl1fo"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_b1ovf"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="7_l2vjc"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="8_rjs88"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="9_nlvpg"]
+[ext_resource type="Texture2D" path="res://assets/objects/parrucca.png" id="10_p3d2p"]
+[ext_resource type="Texture2D" path="res://assets/masks/m1_yellow.png" id="11_ov1gu"]
 
 [sub_resource type="Resource" id="Resource_385d4"]
-script = ExtResource("3_kgx51")
-colors = Array[ExtResource("4_hlmxi")]([ExtResource("5_oh28g")])
-subthemes = Array[ExtResource("6_5f7un")]([ExtResource("7_pl1fo")])
+script = ExtResource("3_oh28g")
+colors = Array[ExtResource("4_5f7un")]([ExtResource("5_pl1fo")])
+subthemes = Array[ExtResource("6_b1ovf")]([ExtResource("7_l2vjc")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [sub_resource type="Resource" id="Resource_1wdlg"]
-script = ExtResource("3_kgx51")
+script = ExtResource("3_oh28g")
 position = 2
 theme = 1
-colors = Array[ExtResource("4_hlmxi")]([ExtResource("8_b1ovf")])
-subthemes = Array[ExtResource("6_5f7un")]([ExtResource("9_l2vjc")])
+colors = Array[ExtResource("4_5f7un")]([ExtResource("8_rjs88")])
+subthemes = Array[ExtResource("6_b1ovf")]([ExtResource("9_nlvpg")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [node name="Else" type="Control" unique_id=1239138290]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_h0vbf")
-character = ExtResource("2_hkwf1")
+script = ExtResource("1_kgx51")
+character = ExtResource("2_hlmxi")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 query_threshold = 30
 pos_response = "BRAVO"
 neg_response = "NON C'HAI STILE"
-query_tags_pos = Array[ExtResource("3_kgx51")]([SubResource("Resource_385d4")])
-query_tags_neg = Array[ExtResource("3_kgx51")]([SubResource("Resource_1wdlg")])
+query_tags_pos = Array[ExtResource("3_oh28g")]([SubResource("Resource_385d4")])
+query_tags_neg = Array[ExtResource("3_oh28g")]([SubResource("Resource_1wdlg")])
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
@@ -46,60 +48,69 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_hkwf1")
+texture = ExtResource("2_hlmxi")
 stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -256.0
-offset_top = -128.0
-offset_right = 256.0
-offset_bottom = 192.0
+anchors_preset = -1
+anchor_left = 0.26500472
+anchor_top = -0.059369754
+anchor_right = 0.71705383
+anchor_bottom = 0.277563
+offset_left = -0.64001465
+offset_top = 0.5200043
+offset_right = 0.64001465
+offset_bottom = -0.2400055
 grow_horizontal = 2
+texture = ExtResource("10_p3d2p")
 expand_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.284
-anchor_right = 0.5
-anchor_bottom = 0.284
-offset_left = -192.0
-offset_top = -50.72
-offset_right = 192.0
-offset_bottom = 77.28
+anchor_left = 0.37563735
+anchor_top = 0.16977313
+anchor_right = 0.63002837
+anchor_bottom = 0.34759665
+offset_left = -53.799988
+offset_top = 78.37598
+offset_right = 52.799988
+offset_bottom = 37.087982
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("11_ov1gu")
 expand_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="Down" type="TextureRect" parent="CharacterRect" unique_id=1132544126]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = -108.0
-offset_right = 128.0
-offset_bottom = 60.0
+anchors_preset = -1
+anchor_left = 0.43300003
+anchor_top = 0.36638656
+anchor_right = 0.56700003
+anchor_bottom = 0.53919333
+offset_left = -47.851013
+offset_top = 35.19998
+offset_right = 54.850983
+offset_bottom = -65.31207
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="Center" type="Control" parent="." unique_id=1720084448]
 layout_mode = 1
-anchor_left = 0.5
-anchor_top = 0.284
-anchor_right = 0.5
-anchor_bottom = 0.284
-offset_left = -256.0
-offset_top = -370.72
-offset_right = 256.0
-offset_bottom = 333.28
+anchor_left = 0.009148084
+anchor_top = 0.2372963
+anchor_right = 0.9371481
+anchor_bottom = 0.8300371
+offset_left = -0.0040016174
+offset_top = -0.27999496
+offset_right = 4.380005
+offset_bottom = -0.44006348
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true

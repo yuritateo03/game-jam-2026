@@ -83,3 +83,17 @@ func check_color_subthemes(pred, label, type:String):
 					return -10
 			else:
 				return 0
+
+func resize_all():
+	up.expand_mode = TextureRect.EXPAND_KEEP_SIZE
+	up.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	
+	mask.expand_mode = TextureRect.EXPAND_KEEP_SIZE
+	mask.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	
+	down.expand_mode = TextureRect.EXPAND_KEEP_SIZE
+	down.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	
+	for child : DecorationSticker in center.get_children():
+		child.expand_mode = TextureRect.EXPAND_KEEP_SIZE
+		up.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
