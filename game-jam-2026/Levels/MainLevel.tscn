@@ -21,12 +21,15 @@
 [ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
 [ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
+[ext_resource type="Texture2D" uid="uid://b5x2peqqdln0k" path="res://scripts/gui/else 2.png" id="13_dcfkk"]
 [ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
-[ext_resource type="Texture2D" uid="uid://c0xj03a8jxtbr" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
+[ext_resource type="Texture2D" uid="uid://cxfrk4owv54jg" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
-[ext_resource type="Texture2D" uid="uid://cewphv6ffdyku" path="res://assets/masks/m1_grey.png" id="18_86oho"]
+[ext_resource type="Texture2D" uid="uid://cw3tq56i4fgb8" path="res://assets/gui/menu.png" id="17_mdio0"]
+[ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
+[ext_resource type="Texture2D" uid="uid://ckpn8lgkx70c7" path="res://assets/gui/mask_button.png" id="19_n5dk2"]
 [ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
 [ext_resource type="Script" uid="uid://dn3e0atjo4qy8" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
 [ext_resource type="Texture2D" uid="uid://d0xujppg2lov0" path="res://assets/gui/up_button.png" id="25_o2g6k"]
@@ -67,7 +70,7 @@ font_size = 60
 font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0u5jo"]
-texture = ExtResource("16_l22rq")
+texture = ExtResource("17_mdio0")
 
 [sub_resource type="Theme" id="Theme_l22rq"]
 Panel/styles/panel = SubResource("StyleBoxTexture_0u5jo")
@@ -213,8 +216,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-split_offsets = PackedInt32Array(-1)
-split_offset = -1
+split_offsets = PackedInt32Array(281)
+split_offset = 281
 metadata/_edit_lock_ = true
 
 [node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
@@ -256,6 +259,39 @@ query_tags_neg = Array[ExtResource("5_7ugy3")]([SubResource("Resource_1wdlg")])
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
+texture = ExtResource("13_dcfkk")
+
+[node name="Up" parent="GameInterface/Else/CharacterRect" index="0" unique_id=2114982018]
+anchor_left = 0.26500472
+anchor_top = -0.059369754
+anchor_right = 0.71705383
+anchor_bottom = 0.277563
+
+[node name="Mask" parent="GameInterface/Else/CharacterRect" index="1" unique_id=100796827]
+anchor_left = 0.37563735
+anchor_top = 0.16977313
+anchor_right = 0.63002837
+anchor_bottom = 0.34759665
+offset_left = -53.799988
+offset_top = 78.37598
+offset_right = 52.799988
+offset_bottom = 37.087982
+
+[node name="Down" parent="GameInterface/Else/CharacterRect" index="2" unique_id=1132544126]
+anchor_top = 0.36638656
+anchor_bottom = 0.53919333
+offset_left = -47.851013
+offset_top = 35.19998
+offset_right = 54.850983
+offset_bottom = -65.31207
+
+[node name="Center" parent="GameInterface/Else" index="1" unique_id=1720084448]
+anchor_left = 0.009148084
+anchor_top = 0.2372963
+anchor_right = 0.9371481
+anchor_bottom = 0.8300371
+offset_left = -0.0040016174
+offset_right = 4.380005
 
 [node name="Rosy" parent="GameInterface" unique_id=1458582970 instance=ExtResource("2_7ugy3")]
 visible = false
@@ -267,6 +303,43 @@ query = "La richiesta di rosy"
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
+texture = ExtResource("4_ndu1b")
+
+[node name="Up" parent="GameInterface/Rosy/CharacterRect" index="0" unique_id=2114982018]
+anchor_left = 0.09131204
+anchor_top = -0.00054622296
+anchor_right = 0.92909616
+anchor_bottom = 0.33638653
+
+[node name="Mask" parent="GameInterface/Rosy/CharacterRect" index="1" unique_id=100796827]
+anchor_left = 0.289
+anchor_top = 0.35300002
+anchor_right = 0.708
+anchor_bottom = 0.44500002
+offset_left = -0.25402832
+offset_top = -0.055999756
+offset_right = 0.3119812
+offset_bottom = 0.35998535
+
+[node name="Down" parent="GameInterface/Rosy/CharacterRect" index="2" unique_id=1132544126]
+anchor_left = 0.312
+anchor_top = 0.504
+anchor_right = 0.67300004
+anchor_bottom = 0.605
+offset_left = 7.9680023
+offset_top = 0.19198608
+offset_right = 0.32196045
+offset_bottom = 0.039978027
+
+[node name="Center" parent="GameInterface/Rosy" index="1" unique_id=1720084448]
+anchor_left = 0.21900001
+anchor_top = 0.119
+anchor_right = 0.74300003
+anchor_bottom = 0.711
+offset_left = -0.23396301
+offset_top = -0.5200043
+offset_right = 0.30203247
+offset_bottom = 0.11999512
 
 [node name="Guglielmo" parent="GameInterface" unique_id=817062701 instance=ExtResource("2_7ugy3")]
 visible = false
@@ -278,6 +351,31 @@ query = "La richiesta di Guglielo"
 anchors_preset = -1
 anchor_top = 0.119
 offset_top = -0.5200043
+texture = ExtResource("5_385d4")
+
+[node name="Up" parent="GameInterface/Guglielmo/CharacterRect" index="0" unique_id=2114982018]
+anchor_left = 0.29522198
+anchor_top = 0.06668068
+anchor_right = 0.7019453
+anchor_bottom = 0.33638653
+
+[node name="Mask" parent="GameInterface/Guglielmo/CharacterRect" index="1" unique_id=100796827]
+anchor_left = 0.35505196
+anchor_top = 0.33609247
+anchor_right = 0.6572238
+anchor_bottom = 0.42907563
+
+[node name="Down" parent="GameInterface/Guglielmo/CharacterRect" index="2" unique_id=1132544126]
+anchor_left = 0.3846648
+anchor_top = 0.49579835
+anchor_right = 0.627611
+anchor_bottom = 0.5887395
+
+[node name="Center" parent="GameInterface/Guglielmo" index="1" unique_id=1720084448]
+anchor_left = 0.29522192
+anchor_top = 0.12618518
+anchor_right = 0.70949954
+anchor_bottom = 0.7707778
 
 [node name="VSplitContainer" type="VSplitContainer" parent="GameInterface" unique_id=744263395]
 layout_mode = 2
@@ -326,31 +424,38 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = 116.0
+offset_right = -72.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
 [node name="MaskButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
-texture_normal = ExtResource("1_ovnwc")
+texture_normal = ExtResource("19_n5dk2")
+stretch_mode = 0
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_qcvw1"), SubResource("Resource_tytca")])
 
 [node name="UpButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=1040566983 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("25_o2g6k")
+stretch_mode = 0
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_bfvw3"), SubResource("Resource_ndu1b")])
 
 [node name="CenterButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("28_5p8ax")
+stretch_mode = 0
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_wa8mu"), SubResource("Resource_vqjuy")])
 
 [node name="DownButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("29_ed34g")
+stretch_mode = 0
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
 
@@ -385,10 +490,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = -16.0
+offset_left = 48.0
+offset_top = 55.92
+offset_right = -48.0
+offset_bottom = -64.0
 grow_horizontal = 2
 grow_vertical = 2
 

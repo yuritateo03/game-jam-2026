@@ -49,6 +49,7 @@ func end_turn():
 	new_frame.set_size(image_limit.size)
 	new_frame.set_position(image_limit.position)
 	new_frame.char_rect.expand_mode = TextureRect.EXPAND_FIT_HEIGHT_PROPORTIONAL
+	new_frame.resize_all()
 	#CALCOLO DEL RISULTATO
 	var results = characters_to_serve[turn_idx].final_results()
 	var results_label :Label = result_layer.get_node("Control/Label")
@@ -100,6 +101,7 @@ func _on_portrait_1_pressed() -> void:
 	new_frame.set_size(image_limit.size)
 	new_frame.set_position(image_limit.position)
 	new_frame.char_rect.expand_mode = TextureRect.EXPAND_FIT_HEIGHT_PROPORTIONAL
+	new_frame.resize_all()
 	
 	new_frame.char_name = scene_name_to_save
 	var scene = PackedScene.new()
@@ -116,6 +118,7 @@ func _on_portrait_2_pressed() -> void:
 	new_frame.set_size(image_limit.size)
 	new_frame.set_position(image_limit.position)
 	new_frame.char_rect.expand_mode = TextureRect.EXPAND_FIT_HEIGHT_PROPORTIONAL
+	new_frame.resize_all()
 	
 	new_frame.char_name = scene_name_to_save
 	var scene = PackedScene.new()
@@ -132,6 +135,7 @@ func _on_portrait_3_pressed() -> void:
 	new_frame.set_size(image_limit.size)
 	new_frame.set_position(image_limit.position)
 	new_frame.char_rect.expand_mode = TextureRect.EXPAND_FIT_HEIGHT_PROPORTIONAL
+	new_frame.resize_all()
 	
 	new_frame.char_name = scene_name_to_save
 	var scene = PackedScene.new()
