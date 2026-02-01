@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cq10lk503vy4j"]
 
 [ext_resource type="Script" uid="uid://8yei28an8wad" path="res://Levels/LevelController.gd" id="1_j5hpt"]
-[ext_resource type="Texture2D" uid="uid://bupy6gjmdol5" path="res://icon.svg" id="1_ovnwc"]
 [ext_resource type="PackedScene" uid="uid://1b8d0g6jatmv" path="res://Levels/CharacterInterface.tscn" id="2_7ugy3"]
 [ext_resource type="Texture2D" uid="uid://ddlh0t7reekkw" path="res://assets/gui/Request_Background.png" id="2_btxl3"]
 [ext_resource type="PackedScene" uid="uid://c7uvsf2j4gksx" path="res://Levels/Decorations/UI/PositionButton.tscn" id="2_dncm7"]
@@ -24,20 +23,37 @@
 [ext_resource type="Texture2D" uid="uid://b5x2peqqdln0k" path="res://scripts/gui/else 2.png" id="13_dcfkk"]
 [ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
-[ext_resource type="Texture2D" uid="uid://cxfrk4owv54jg" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
 [ext_resource type="Texture2D" uid="uid://cw3tq56i4fgb8" path="res://assets/gui/menu.png" id="17_mdio0"]
 [ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Texture2D" uid="uid://ckpn8lgkx70c7" path="res://assets/gui/mask_button.png" id="19_n5dk2"]
-[ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
+[ext_resource type="Texture2D" uid="uid://bdqy6xof0gtq1" path="res://assets/masks/m2_grey.png" id="23_jmq5u"]
+[ext_resource type="Texture2D" uid="uid://dvuuar65w5m2t" path="res://assets/masks/m3_grey.png" id="24_l6tsj"]
+[ext_resource type="Resource" uid="uid://dtupx65op8xek" path="res://Levels/Decorations/TagsResource/SubTheme/Disco.tres" id="24_mbvd1"]
 [ext_resource type="Script" uid="uid://dn3e0atjo4qy8" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
 [ext_resource type="Texture2D" uid="uid://d0xujppg2lov0" path="res://assets/gui/up_button.png" id="25_o2g6k"]
+[ext_resource type="Texture2D" uid="uid://d0b12x1m4aa58" path="res://assets/objects/fiori.png" id="27_iqcar"]
 [ext_resource type="Texture2D" uid="uid://sksj07pijsdv" path="res://assets/gui/centre_button.png" id="28_5p8ax"]
+[ext_resource type="Resource" uid="uid://csq7huvrr0cqw" path="res://Levels/Decorations/TagsResource/Colors/Green.tres" id="28_fbttw"]
 [ext_resource type="Texture2D" uid="uid://bxi7lrfdg6fwg" path="res://assets/gui/down_button.png" id="29_ed34g"]
+[ext_resource type="Resource" uid="uid://drpe5f4bonybv" path="res://Levels/Decorations/TagsResource/Colors/Blue.tres" id="29_s6rto"]
+[ext_resource type="Resource" uid="uid://cobpwckgure6y" path="res://Levels/Decorations/TagsResource/SubTheme/Floral.tres" id="30_4prt6"]
 [ext_resource type="Texture2D" uid="uid://dc7dt0w03i2fq" path="res://assets/gui/Frame_Vertical.png" id="30_o2g6k"]
+[ext_resource type="Resource" uid="uid://c1aleupw83xma" path="res://Levels/Decorations/TagsResource/SubTheme/Wedding.tres" id="31_3b48f"]
 [ext_resource type="Texture2D" uid="uid://r62632guedcw" path="res://assets/gui/finish_button.png" id="31_5p8ax"]
 [ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="31_ed34g"]
+[ext_resource type="Resource" uid="uid://wq37ojeoeuo6" path="res://Levels/Decorations/TagsResource/Colors/White.tres" id="34_0kkbu"]
+[ext_resource type="Texture2D" uid="uid://dti0hkskd36yu" path="res://assets/objects/denti.png" id="35_3b48f"]
+[ext_resource type="Resource" uid="uid://de3hk4rbp2gt0" path="res://Levels/Decorations/TagsResource/SubTheme/Animals.tres" id="35_30akm"]
+[ext_resource type="Resource" uid="uid://c2wrpa6uuwdj0" path="res://Levels/Decorations/TagsResource/SubTheme/Space.tres" id="36_0kkbu"]
+[ext_resource type="Texture2D" uid="uid://cskqsqlnufdlg" path="res://assets/objects/papillon.png" id="37_30akm"]
+[ext_resource type="Resource" uid="uid://b3h04eax187dj" path="res://Levels/Decorations/TagsResource/Colors/Black.tres" id="38_jmq5u"]
+[ext_resource type="Texture2D" uid="uid://bku7pv131khyw" path="res://assets/objects/trucco.png" id="39_35qpb"]
+[ext_resource type="Resource" uid="uid://c7vj2chbv6e8s" path="res://Levels/Decorations/TagsResource/SubTheme/Finance.tres" id="39_l6tsj"]
+[ext_resource type="Texture2D" uid="uid://bl13c42iisegy" path="res://assets/objects/sangue_destro.png" id="40_1arfn"]
+[ext_resource type="Texture2D" uid="uid://coby6yvcnnxgs" path="res://assets/objects/choker.png" id="40_jmq5u"]
+[ext_resource type="Texture2D" uid="uid://bjidgfm6c5gdq" path="res://assets/objects/alien_destro.png" id="41_ouyfd"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tytca"]
 texture = ExtResource("2_btxl3")
@@ -75,101 +91,163 @@ texture = ExtResource("17_mdio0")
 [sub_resource type="Theme" id="Theme_l22rq"]
 Panel/styles/panel = SubResource("StyleBoxTexture_0u5jo")
 
-[sub_resource type="Resource" id="Resource_86oho"]
+[sub_resource type="Resource" id="Resource_nr0y4"]
 script = ExtResource("5_7ugy3")
 position = 3
-colors = Array[ExtResource("4_vo7st")]([ExtResource("17_f73am")])
-subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_qcvw1"]
-script = ExtResource("3_pm182")
-image = ExtResource("16_1wdlg")
-tags = SubResource("Resource_86oho")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_btxl3"]
-script = ExtResource("5_7ugy3")
-position = 3
+theme = 2
 colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
-subthemes = Array[ExtResource("6_774x7")]([ExtResource("19_qcvw1")])
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_tytca"]
-script = ExtResource("3_pm182")
-image = ExtResource("18_86oho")
-tags = SubResource("Resource_btxl3")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_5wso4"]
-script = ExtResource("5_7ugy3")
-colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
-subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_bfvw3"]
-script = ExtResource("3_pm182")
-image = ExtResource("6_wa8mu")
-tags = SubResource("Resource_5wso4")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_gkx6n"]
-script = ExtResource("5_7ugy3")
-colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
 subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
-[sub_resource type="Resource" id="Resource_ndu1b"]
+[sub_resource type="Resource" id="Resource_rtra4"]
 script = ExtResource("3_pm182")
-image = ExtResource("10_0gyb6")
-tags = SubResource("Resource_gkx6n")
+image = ExtResource("18_86oho")
+tags = SubResource("Resource_nr0y4")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
-[sub_resource type="Resource" id="Resource_774x7"]
+[sub_resource type="Resource" id="Resource_mmncu"]
 script = ExtResource("5_7ugy3")
-position = 1
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_wa8mu"]
-script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_774x7")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_0gyb6"]
-script = ExtResource("5_7ugy3")
-position = 1
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_vqjuy"]
-script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_0gyb6")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_vo7st"]
-script = ExtResource("5_7ugy3")
-position = 2
+position = 3
 theme = 1
 colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
 subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
-[sub_resource type="Resource" id="Resource_0tv47"]
+[sub_resource type="Resource" id="Resource_87ga2"]
 script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_vo7st")
+image = ExtResource("23_jmq5u")
+tags = SubResource("Resource_mmncu")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
-[sub_resource type="Resource" id="Resource_7ugy3"]
+[sub_resource type="Resource" id="Resource_n4xx0"]
 script = ExtResource("5_7ugy3")
-position = 2
+position = 3
+colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
-[sub_resource type="Resource" id="Resource_ok4l4"]
+[sub_resource type="Resource" id="Resource_qfaap"]
 script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_7ugy3")
+image = ExtResource("24_l6tsj")
+tags = SubResource("Resource_n4xx0")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_30akm"]
+script = ExtResource("5_7ugy3")
+colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m"), ExtResource("24_mbvd1")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_jmq5u"]
+script = ExtResource("3_pm182")
+image = ExtResource("10_0gyb6")
+tags = SubResource("Resource_30akm")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_l6tsj"]
+script = ExtResource("5_7ugy3")
+colors = Array[ExtResource("4_vo7st")]([ExtResource("17_f73am")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("24_mbvd1")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_35qpb"]
+script = ExtResource("3_pm182")
+image = ExtResource("6_wa8mu")
+tags = SubResource("Resource_l6tsj")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_1arfn"]
+script = ExtResource("5_7ugy3")
+theme = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("28_fbttw"), ExtResource("6_ndu1b"), ExtResource("29_s6rto")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("30_4prt6"), ExtResource("31_3b48f")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_0ih3j"]
+script = ExtResource("3_pm182")
+image = ExtResource("27_iqcar")
+tags = SubResource("Resource_1arfn")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_ouyfd"]
+script = ExtResource("5_7ugy3")
+position = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("34_0kkbu")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4"), ExtResource("35_30akm")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_sjwgp"]
+script = ExtResource("3_pm182")
+image = ExtResource("35_3b48f")
+tags = SubResource("Resource_ouyfd")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_pfmxh"]
+script = ExtResource("5_7ugy3")
+position = 1
+theme = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("34_0kkbu")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("30_4prt6"), ExtResource("31_3b48f")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_x8ayn"]
+script = ExtResource("3_pm182")
+image = ExtResource("39_35qpb")
+tags = SubResource("Resource_pfmxh")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_fq78t"]
+script = ExtResource("5_7ugy3")
+position = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_3061k"]
+script = ExtResource("3_pm182")
+image = ExtResource("40_1arfn")
+tags = SubResource("Resource_fq78t")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_jb7mn"]
+script = ExtResource("5_7ugy3")
+position = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("28_fbttw")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("36_0kkbu")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_fiuia"]
+script = ExtResource("3_pm182")
+image = ExtResource("41_ouyfd")
+tags = SubResource("Resource_jb7mn")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_rg4rh"]
+script = ExtResource("5_7ugy3")
+position = 2
+theme = 2
+colors = Array[ExtResource("4_vo7st")]([ExtResource("38_jmq5u")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4"), ExtResource("31_3b48f"), ExtResource("39_l6tsj")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_7s7c7"]
+script = ExtResource("3_pm182")
+image = ExtResource("37_30akm")
+tags = SubResource("Resource_rg4rh")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_isdib"]
+script = ExtResource("5_7ugy3")
+position = 2
+theme = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("38_jmq5u"), ExtResource("34_0kkbu")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_uveub"]
+script = ExtResource("3_pm182")
+image = ExtResource("40_jmq5u")
+tags = SubResource("Resource_isdib")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mdio0"]
@@ -406,7 +484,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1573459837]
-wait_time = 3.0
+wait_time = 60.0
 one_shot = true
 
 [node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
@@ -436,28 +514,28 @@ layout_mode = 2
 texture_normal = ExtResource("19_n5dk2")
 stretch_mode = 0
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_qcvw1"), SubResource("Resource_tytca")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_rtra4"), SubResource("Resource_87ga2"), SubResource("Resource_qfaap")])
 
 [node name="UpButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=1040566983 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("25_o2g6k")
 stretch_mode = 0
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_bfvw3"), SubResource("Resource_ndu1b")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_jmq5u"), SubResource("Resource_35qpb"), SubResource("Resource_0ih3j")])
 
 [node name="CenterButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("28_5p8ax")
 stretch_mode = 0
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_wa8mu"), SubResource("Resource_vqjuy")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_sjwgp"), SubResource("Resource_x8ayn"), SubResource("Resource_3061k"), SubResource("Resource_fiuia")])
 
 [node name="DownButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("29_ed34g")
 stretch_mode = 0
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_7s7c7"), SubResource("Resource_uveub")])
 
 [node name="ResultLayer" type="CanvasLayer" parent="." unique_id=2101719848]
 visible = false

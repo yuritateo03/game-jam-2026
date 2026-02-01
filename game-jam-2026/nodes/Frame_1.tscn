@@ -1,29 +1,30 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_61xqr"]
-[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_761gv"]
-[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="3_ulf8x"]
-[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_e5wg5"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="5_xjwq1"]
-[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_duyvo"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="7_tgypc"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="8_hxwhg"]
-[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="9_p0lii"]
-[ext_resource type="Texture2D" path="res://assets/objects/parrucca.png" id="10_3dbjc"]
-[ext_resource type="Texture2D" path="res://assets/masks/m1_yellow.png" id="11_oapc3"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_761gv"]
+[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_ulf8x"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="3_e5wg5"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_xjwq1"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="5_duyvo"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_tgypc"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="7_hxwhg"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="8_p0lii"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="9_3dbjc"]
+[ext_resource type="Texture2D" path="res://assets/objects/fiori.png" id="10_oapc3"]
+[ext_resource type="Texture2D" path="res://assets/masks/m1_grey.png" id="11_cwcu7"]
+[ext_resource type="Texture2D" path="res://assets/objects/choker.png" id="12_tgswm"]
 
 [sub_resource type="Resource" id="Resource_385d4"]
-script = ExtResource("3_ulf8x")
-colors = Array[ExtResource("4_e5wg5")]([ExtResource("5_xjwq1")])
-subthemes = Array[ExtResource("6_duyvo")]([ExtResource("7_tgypc")])
+script = ExtResource("3_e5wg5")
+colors = Array[ExtResource("4_xjwq1")]([ExtResource("5_duyvo")])
+subthemes = Array[ExtResource("6_tgypc")]([ExtResource("7_hxwhg")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [sub_resource type="Resource" id="Resource_1wdlg"]
-script = ExtResource("3_ulf8x")
+script = ExtResource("3_e5wg5")
 position = 2
 theme = 1
-colors = Array[ExtResource("4_e5wg5")]([ExtResource("8_hxwhg")])
-subthemes = Array[ExtResource("6_duyvo")]([ExtResource("9_p0lii")])
+colors = Array[ExtResource("4_xjwq1")]([ExtResource("8_p0lii")])
+subthemes = Array[ExtResource("6_tgypc")]([ExtResource("9_3dbjc")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [node name="Else" type="Control" unique_id=1239138290]
@@ -35,15 +36,15 @@ offset_top = 34.0
 offset_right = 37.0
 offset_bottom = 34.0
 size_flags_horizontal = 3
-script = ExtResource("1_61xqr")
-character = ExtResource("2_761gv")
+script = ExtResource("1_761gv")
+character = ExtResource("2_ulf8x")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 query_threshold = 30
 pos_response = "BRAVO"
 neg_response = "NON C'HAI STILE"
-query_tags_pos = Array[ExtResource("3_ulf8x")]([SubResource("Resource_385d4")])
-query_tags_neg = Array[ExtResource("3_ulf8x")]([SubResource("Resource_1wdlg")])
-char_name = "aegvzxfz"
+query_tags_pos = Array[ExtResource("3_e5wg5")]([SubResource("Resource_385d4")])
+query_tags_neg = Array[ExtResource("3_e5wg5")]([SubResource("Resource_1wdlg")])
+char_name = "fanculo"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
@@ -55,7 +56,7 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_761gv")
+texture = ExtResource("2_ulf8x")
 expand_mode = 5
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
@@ -72,7 +73,7 @@ offset_top = 0.5200043
 offset_right = 0.64001465
 offset_bottom = -0.2400055
 grow_horizontal = 2
-texture = ExtResource("10_3dbjc")
+texture = ExtResource("10_oapc3")
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
@@ -89,7 +90,7 @@ offset_right = 52.799988
 offset_bottom = 37.087982
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("11_oapc3")
+texture = ExtResource("11_cwcu7")
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
@@ -106,6 +107,7 @@ offset_right = 54.850983
 offset_bottom = -65.31207
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("12_tgswm")
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
