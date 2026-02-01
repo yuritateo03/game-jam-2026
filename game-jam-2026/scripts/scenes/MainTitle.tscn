@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://d2q4227l718a5" path="res://assets/font/Google_Sans/static/GoogleSans-BoldItalic.ttf" id="11_yvqej"]
 [ext_resource type="FontFile" uid="uid://den1a0eh0isal" path="res://assets/font/Google_Sans/static/GoogleSans-Italic.ttf" id="12_pesqw"]
 [ext_resource type="Texture2D" uid="uid://c41yfnroc3eh7" path="res://assets/gui/play_button.png" id="13_hcoy4"]
+[ext_resource type="AudioStream" uid="uid://dw07pvsji4kqs" path="res://sounds/music/intro_marimba.wav" id="14_yvqej"]
 
 [node name="Control" type="Control" unique_id=952706856]
 layout_mode = 3
@@ -221,6 +222,11 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("9_not4n")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Inserisci qui il tuo nome"
+
+[node name="Intro MainTitle" type="AudioStreamPlayer" parent="." unique_id=505706872]
+stream = ExtResource("14_yvqej")
+autoplay = true
+mix_target = 1
 
 [connection signal="pressed" from="HBoxContainer/Gioca" to="." method="_on_gioca_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Gallery" to="." method="_on_gallery_button_pressed"]
