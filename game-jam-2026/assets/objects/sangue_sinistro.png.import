@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqrrj287l6j4h"
-path="res://.godot/imported/mask_yel.png-3058a0a150dbacf78bc828db79ae0c27.ctex"
+uid="uid://d2pf3c1sg31o0"
+path="res://.godot/imported/sangue_sinistro.png-1a0be09baf3f93a2c9159136c2790570.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/masks/mask_yel.png"
-dest_files=["res://.godot/imported/mask_yel.png-3058a0a150dbacf78bc828db79ae0c27.ctex"]
+source_file="res://assets/objects/sangue_sinistro.png"
+dest_files=["res://.godot/imported/sangue_sinistro.png-1a0be09baf3f93a2c9159136c2790570.ctex"]
 
 [params]
 

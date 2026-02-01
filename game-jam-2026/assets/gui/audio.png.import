@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ucemduqwraei"
-path="res://.godot/imported/mask_grey.png-889a75f45ce9c074fa8b1dc6602f0b72.ctex"
+uid="uid://cq1bgqv26m2vh"
+path="res://.godot/imported/audio.png-dd2d61ac3de6e6c1b5e6dd2f8db39b4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/masks/mask_grey.png"
-dest_files=["res://.godot/imported/mask_grey.png-889a75f45ce9c074fa8b1dc6602f0b72.ctex"]
+source_file="res://assets/gui/audio.png"
+dest_files=["res://.godot/imported/audio.png-dd2d61ac3de6e6c1b5e6dd2f8db39b4f.ctex"]
 
 [params]
 

@@ -37,12 +37,7 @@ size_flags_horizontal = 3
 script = ExtResource("1_mq0ro")
 character = ExtResource("2_61xqr")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-query_threshold = 30
-pos_response = "BRAVO"
-neg_response = "NON C'HAI STILE"
-query_tags_pos = Array[ExtResource("3_761gv")]([SubResource("Resource_385d4")])
-query_tags_neg = Array[ExtResource("3_761gv")]([SubResource("Resource_1wdlg")])
-char_name = "faf"
+char_name = "ciao"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1

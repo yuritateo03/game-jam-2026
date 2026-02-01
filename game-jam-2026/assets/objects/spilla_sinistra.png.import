@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ney550v8rn4n"
-path="res://.godot/imported/mask_pink.png-3f2c1eec4009320b27090a9554bdd6ed.ctex"
+uid="uid://bqujow7035nxk"
+path="res://.godot/imported/spilla_sinistra.png-bbc8ef3bf5d740783b9bb739e5d14de5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/masks/mask_pink.png"
-dest_files=["res://.godot/imported/mask_pink.png-3f2c1eec4009320b27090a9554bdd6ed.ctex"]
+source_file="res://assets/objects/spilla_sinistra.png"
+dest_files=["res://.godot/imported/spilla_sinistra.png-bbc8ef3bf5d740783b9bb739e5d14de5.ctex"]
 
 [params]
 
