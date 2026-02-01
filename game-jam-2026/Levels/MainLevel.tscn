@@ -14,27 +14,35 @@
 [ext_resource type="Texture2D" uid="uid://lkfnq34b1b6d" path="res://assets/characters/Guglielmo.png" id="5_385d4"]
 [ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_774x7"]
 [ext_resource type="Resource" uid="uid://ck5wk2vesf3rx" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="6_ndu1b"]
-[ext_resource type="Texture2D" uid="uid://kjqn3jc8om73" path="res://assets/objects/cappuccio.png" id="6_wa8mu"]
 [ext_resource type="Resource" uid="uid://droc5a5c5ejl6" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="8_385d4"]
 [ext_resource type="Resource" uid="uid://cbjxt1oa780em" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="9_dquol"]
-[ext_resource type="Texture2D" uid="uid://56snc675a3ix" path="res://assets/objects/parrucca.png" id="10_0gyb6"]
 [ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
 [ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
 [ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
-[ext_resource type="Texture2D" uid="uid://c0xj03a8jxtbr" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
+[ext_resource type="Texture2D" uid="uid://cxfrk4owv54jg" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
-[ext_resource type="Texture2D" uid="uid://cewphv6ffdyku" path="res://assets/masks/m1_grey.png" id="18_86oho"]
+[ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
-[ext_resource type="Script" uid="uid://dn3e0atjo4qy8" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
+[ext_resource type="Script" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
 [ext_resource type="Texture2D" uid="uid://d0xujppg2lov0" path="res://assets/gui/up_button.png" id="25_o2g6k"]
+[ext_resource type="Texture2D" uid="uid://crrg2ftcf8hu1" path="res://assets/objects/coppola.png" id="26_mbvd1"]
+[ext_resource type="Resource" uid="uid://cjhdqbxe85gkl" path="res://Levels/Decorations/TagsResource/Colors/Brown.tres" id="27_iqcar"]
 [ext_resource type="Texture2D" uid="uid://sksj07pijsdv" path="res://assets/gui/centre_button.png" id="28_5p8ax"]
+[ext_resource type="Texture2D" uid="uid://dti0hkskd36yu" path="res://assets/objects/denti.png" id="28_ed34g"]
+[ext_resource type="Resource" uid="uid://c7vj2chbv6e8s" path="res://Levels/Decorations/TagsResource/SubTheme/Finance.tres" id="28_fbttw"]
 [ext_resource type="Texture2D" uid="uid://bxi7lrfdg6fwg" path="res://assets/gui/down_button.png" id="29_ed34g"]
+[ext_resource type="Resource" uid="uid://wq37ojeoeuo6" path="res://Levels/Decorations/TagsResource/Colors/White.tres" id="29_n5dk2"]
+[ext_resource type="Resource" uid="uid://c1aleupw83xma" path="res://Levels/Decorations/TagsResource/SubTheme/Wedding.tres" id="29_s6rto"]
+[ext_resource type="Texture2D" uid="uid://gm0qflr7jlgc" path="res://assets/objects/bombetta.png" id="30_fbttw"]
 [ext_resource type="Texture2D" uid="uid://dc7dt0w03i2fq" path="res://assets/gui/Frame_Vertical.png" id="30_o2g6k"]
+[ext_resource type="Texture2D" uid="uid://bl13c42iisegy" path="res://assets/objects/sangue_destro.png" id="31_4prt6"]
 [ext_resource type="Texture2D" uid="uid://r62632guedcw" path="res://assets/gui/finish_button.png" id="31_5p8ax"]
 [ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="31_ed34g"]
+[ext_resource type="Resource" uid="uid://b3h04eax187dj" path="res://Levels/Decorations/TagsResource/Colors/Black.tres" id="31_s6rto"]
+[ext_resource type="Texture2D" uid="uid://d2pf3c1sg31o0" path="res://assets/objects/sangue_sinistro.png" id="32_3b48f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tytca"]
 texture = ExtResource("2_btxl3")
@@ -98,75 +106,71 @@ image = ExtResource("18_86oho")
 tags = SubResource("Resource_btxl3")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
-[sub_resource type="Resource" id="Resource_5wso4"]
+[sub_resource type="Resource" id="Resource_0kkbu"]
 script = ExtResource("5_7ugy3")
+theme = 2
+colors = Array[ExtResource("4_vo7st")]([ExtResource("27_iqcar")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("28_fbttw"), ExtResource("29_s6rto")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_30akm"]
+script = ExtResource("3_pm182")
+image = ExtResource("26_mbvd1")
+tags = SubResource("Resource_0kkbu")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_4prt6"]
+script = ExtResource("5_7ugy3")
+theme = 2
+colors = Array[ExtResource("4_vo7st")]([ExtResource("31_s6rto")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("29_s6rto"), ExtResource("8_385d4"), ExtResource("10_gm63m")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_3b48f"]
+script = ExtResource("3_pm182")
+image = ExtResource("30_fbttw")
+tags = SubResource("Resource_4prt6")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_jmq5u"]
+script = ExtResource("5_7ugy3")
+position = 1
 colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4"), ExtResource("19_qcvw1")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_l6tsj"]
+script = ExtResource("3_pm182")
+image = ExtResource("31_4prt6")
+tags = SubResource("Resource_jmq5u")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_35qpb"]
+script = ExtResource("5_7ugy3")
+position = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4"), ExtResource("19_qcvw1")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_1arfn"]
+script = ExtResource("3_pm182")
+image = ExtResource("32_3b48f")
+tags = SubResource("Resource_35qpb")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_mdio0"]
+script = ExtResource("5_7ugy3")
+name = "denti da vampiro"
+position = 2
+colors = Array[ExtResource("4_vo7st")]([ExtResource("29_n5dk2")])
 subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
-[sub_resource type="Resource" id="Resource_bfvw3"]
+[sub_resource type="Resource" id="Resource_dcfkk"]
 script = ExtResource("3_pm182")
-image = ExtResource("6_wa8mu")
-tags = SubResource("Resource_5wso4")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_gkx6n"]
-script = ExtResource("5_7ugy3")
-colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
-subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_ndu1b"]
-script = ExtResource("3_pm182")
-image = ExtResource("10_0gyb6")
-tags = SubResource("Resource_gkx6n")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_774x7"]
-script = ExtResource("5_7ugy3")
-position = 1
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_wa8mu"]
-script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_774x7")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_0gyb6"]
-script = ExtResource("5_7ugy3")
-position = 1
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_vqjuy"]
-script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_0gyb6")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_vo7st"]
-script = ExtResource("5_7ugy3")
-position = 2
-theme = 1
-colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
-subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_0tv47"]
-script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_vo7st")
-metadata/_custom_type_script = "uid://oit62jpmos5h"
-
-[sub_resource type="Resource" id="Resource_7ugy3"]
-script = ExtResource("5_7ugy3")
-position = 2
-metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="Resource" id="Resource_ok4l4"]
-script = ExtResource("3_pm182")
-image = ExtResource("1_ovnwc")
-tags = SubResource("Resource_7ugy3")
+image = ExtResource("28_ed34g")
+name = "denti"
+tags = SubResource("Resource_mdio0")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mdio0"]
@@ -340,19 +344,19 @@ deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_qcvw1"), Sub
 layout_mode = 2
 texture_normal = ExtResource("25_o2g6k")
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_bfvw3"), SubResource("Resource_ndu1b")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_30akm"), SubResource("Resource_3b48f")])
 
 [node name="CenterButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=839640539 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("28_5p8ax")
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_wa8mu"), SubResource("Resource_vqjuy")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_l6tsj"), SubResource("Resource_1arfn")])
 
 [node name="DownButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 texture_normal = ExtResource("29_ed34g")
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_0tv47"), SubResource("Resource_ok4l4")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_dcfkk")])
 
 [node name="ResultLayer" type="CanvasLayer" parent="." unique_id=2101719848]
 visible = false
