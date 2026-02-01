@@ -13,10 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://lkfnq34b1b6d" path="res://assets/characters/Guglielmo.png" id="5_385d4"]
 [ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_774x7"]
 [ext_resource type="Resource" uid="uid://ck5wk2vesf3rx" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="6_ndu1b"]
-[ext_resource type="Texture2D" uid="uid://kjqn3jc8om73" path="res://assets/objects/cappuccio.png" id="6_wa8mu"]
 [ext_resource type="Resource" uid="uid://droc5a5c5ejl6" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="8_385d4"]
 [ext_resource type="Resource" uid="uid://cbjxt1oa780em" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="9_dquol"]
-[ext_resource type="Texture2D" uid="uid://56snc675a3ix" path="res://assets/objects/parrucca.png" id="10_0gyb6"]
 [ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
 [ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
@@ -25,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
-[ext_resource type="Texture2D" uid="uid://cw3tq56i4fgb8" path="res://assets/gui/menu.png" id="17_mdio0"]
 [ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Texture2D" uid="uid://ckpn8lgkx70c7" path="res://assets/gui/mask_button.png" id="19_n5dk2"]
 [ext_resource type="Texture2D" uid="uid://bdqy6xof0gtq1" path="res://assets/masks/m2_grey.png" id="23_jmq5u"]
@@ -281,8 +278,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -152.0
-offset_bottom = 152.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ikh7f")
@@ -298,12 +293,17 @@ split_offsets = PackedInt32Array(281)
 split_offset = 281
 metadata/_edit_lock_ = true
 
-[node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
+[node name="QueryPanel" type="NinePatchRect" parent="GameInterface" unique_id=884560627]
 custom_minimum_size = Vector2(700, 500)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
+size_flags_horizontal = 6
 theme = SubResource("Theme_41oa5")
+texture = ExtResource("2_btxl3")
+region_rect = Rect2(0, -1, 588, 427)
+patch_margin_left = 200
+patch_margin_top = 141
+patch_margin_right = 206
+patch_margin_bottom = 124
 
 [node name="QueryText" type="RichTextLabel" parent="GameInterface/QueryPanel" unique_id=200240675]
 layout_mode = 1
