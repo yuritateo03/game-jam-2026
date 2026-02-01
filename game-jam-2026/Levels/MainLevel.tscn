@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
 [ext_resource type="Texture2D" uid="uid://cxfrk4owv54jg" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
+[ext_resource type="FontFile" uid="uid://dqaals4ftc3pf" path="res://assets/font/Google_Sans/static/GoogleSans_17pt-Regular.ttf" id="16_n5dk2"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
 [ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
@@ -55,16 +56,6 @@ theme = 1
 colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
 subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o0k17"]
-texture = ExtResource("14_41oa5")
-
-[sub_resource type="Theme" id="Theme_lp55d"]
-Label/styles/normal = SubResource("StyleBoxTexture_o0k17")
-
-[sub_resource type="LabelSettings" id="LabelSettings_41oa5"]
-font_size = 60
-font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0u5jo"]
 texture = ExtResource("16_l22rq")
@@ -290,29 +281,40 @@ split_offset = 100
 
 [node name="Time_PauseContainer" type="HSplitContainer" parent="GameInterface/VSplitContainer" unique_id=556006061]
 layout_mode = 2
+size_flags_horizontal = 8
 
-[node name="TimerPanel" type="Panel" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=123704600]
-self_modulate = Color(1, 1, 1, 0)
+[node name="TimerPanel" type="NinePatchRect" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1227977915]
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=141728070]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_lp55d")
-theme_override_font_sizes/font_size = 40
-text = "1:00"
-label_settings = SubResource("LabelSettings_41oa5")
-horizontal_alignment = 1
-vertical_alignment = 1
+texture = ExtResource("14_41oa5")
+region_rect = Rect2(3, 2, 282, 125)
+patch_margin_left = 23
+patch_margin_top = 13
+patch_margin_right = 119
+patch_margin_bottom = 14
 
 [node name="Timer" type="Timer" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1573459837]
 wait_time = 3.0
 one_shot = true
+
+[node name="Label" type="Label" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1925982344]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.825
+anchor_top = 0.5
+anchor_right = 0.84
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -48.0
+offset_right = -100.0
+offset_bottom = 48.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
+theme_override_fonts/font = ExtResource("16_n5dk2")
+theme_override_font_sizes/font_size = 80
+text = "1:00"
 
 [node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
 process_mode = 3
