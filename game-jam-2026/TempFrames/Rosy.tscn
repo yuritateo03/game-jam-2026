@@ -1,9 +1,7 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_7xy1q"]
-[ext_resource type="Texture2D" path="res://assets/gui/rosy 2.png" id="2_uue80"]
-[ext_resource type="Texture2D" path="res://assets/objects/parrucca.png" id="3_8llxi"]
-[ext_resource type="Texture2D" path="res://icon.svg" id="4_i7ibm"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_huowe"]
+[ext_resource type="Texture2D" path="res://assets/gui/rosy 2.png" id="2_lrc11"]
 
 [node name="Rosy" type="Control" unique_id=1458582970]
 layout_mode = 2
