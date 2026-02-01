@@ -1,0 +1,108 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_h0vbf"]
+[ext_resource type="Texture2D" path="res://assets/characters/else.png" id="2_hkwf1"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="3_kgx51"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/ColorTag.gd" id="4_hlmxi"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="5_oh28g"]
+[ext_resource type="Script" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_5f7un"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="7_pl1fo"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="8_b1ovf"]
+[ext_resource type="Resource" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="9_l2vjc"]
+
+[sub_resource type="Resource" id="Resource_385d4"]
+script = ExtResource("3_kgx51")
+colors = Array[ExtResource("4_hlmxi")]([ExtResource("5_oh28g")])
+subthemes = Array[ExtResource("6_5f7un")]([ExtResource("7_pl1fo")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_1wdlg"]
+script = ExtResource("3_kgx51")
+position = 2
+theme = 1
+colors = Array[ExtResource("4_hlmxi")]([ExtResource("8_b1ovf")])
+subthemes = Array[ExtResource("6_5f7un")]([ExtResource("9_l2vjc")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[node name="Else" type="Control" unique_id=1239138290]
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_h0vbf")
+character = ExtResource("2_hkwf1")
+query = "Salve, volevo farle i miei più sinceri complimenti per la sua bottega, mi chiamo Else e sono in cerca di una maschera che possa valorizzarmi durante il prossimo Galà Mascherato! 
+
+Il tema è anni 20, e adorerei indossare un bel copricapo per l’occasione. Solitamente non preferisco colori particolarmente accesi, ma forse per oggi ti lascerò carta bianca!"
+query_threshold = 30
+pos_response = "BRAVO"
+neg_response = "NON C'HAI STILE"
+query_tags_pos = Array[ExtResource("3_kgx51")]([SubResource("Resource_385d4")])
+query_tags_neg = Array[ExtResource("3_kgx51")]([SubResource("Resource_1wdlg")])
+
+[node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.119
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.5200043
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_hkwf1")
+stretch_mode = 5
+
+[node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -256.0
+offset_top = -128.0
+offset_right = 256.0
+offset_bottom = 192.0
+grow_horizontal = 2
+expand_mode = 5
+
+[node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.284
+anchor_right = 0.5
+anchor_bottom = 0.284
+offset_left = -192.0
+offset_top = -50.72
+offset_right = 192.0
+offset_bottom = 77.28
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 5
+
+[node name="Down" type="TextureRect" parent="CharacterRect" unique_id=1132544126]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -108.0
+offset_right = 128.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="Center" type="Control" parent="." unique_id=1720084448]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.284
+anchor_right = 0.5
+anchor_bottom = 0.284
+offset_left = -256.0
+offset_top = -370.72
+offset_right = 256.0
+offset_bottom = 333.28
+grow_horizontal = 2
+grow_vertical = 2
