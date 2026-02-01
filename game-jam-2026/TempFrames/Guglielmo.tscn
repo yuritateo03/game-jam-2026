@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_2h21b"]
 [ext_resource type="Texture2D" path="res://assets/characters/Guglielmo.png" id="2_shg13"]
-[ext_resource type="Texture2D" path="res://assets/objects/parrucca.png" id="3_s0vud"]
+[ext_resource type="Texture2D" path="res://assets/objects/cappuccio.png" id="3_s0vud"]
 
 [node name="Guglielmo" type="Control" unique_id=817062701]
 layout_mode = 2
@@ -35,6 +35,7 @@ offset_right = 256.0
 offset_bottom = 192.0
 grow_horizontal = 2
 texture = ExtResource("3_s0vud")
+expand_mode = 5
 
 [node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]
 layout_mode = 1
@@ -49,6 +50,7 @@ offset_right = 192.0
 offset_bottom = 77.28
 grow_horizontal = 2
 grow_vertical = 2
+expand_mode = 5
 
 [node name="Down" type="TextureRect" parent="CharacterRect" unique_id=1132544126]
 layout_mode = 1
@@ -63,6 +65,7 @@ offset_right = 128.0
 offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
+expand_mode = 3
 
 [node name="Center" type="Control" parent="." unique_id=1720084448]
 layout_mode = 1
