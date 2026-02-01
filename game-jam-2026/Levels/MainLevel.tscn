@@ -215,12 +215,17 @@ split_offsets = PackedInt32Array(-1)
 split_offset = -1
 metadata/_edit_lock_ = true
 
-[node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
+[node name="QueryPanel" type="NinePatchRect" parent="GameInterface" unique_id=884560627]
 custom_minimum_size = Vector2(700, 500)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
+size_flags_horizontal = 6
 theme = SubResource("Theme_41oa5")
+texture = ExtResource("2_btxl3")
+region_rect = Rect2(0, -1, 588, 427)
+patch_margin_left = 200
+patch_margin_top = 141
+patch_margin_right = 206
+patch_margin_bottom = 124
 
 [node name="QueryText" type="RichTextLabel" parent="GameInterface/QueryPanel" unique_id=200240675]
 layout_mode = 1
