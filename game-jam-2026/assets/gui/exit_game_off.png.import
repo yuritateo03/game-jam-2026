@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1tecs0wpw6um"
-path="res://.godot/imported/m3_blue.png-9ededda1427ac044b9a770a162f75b2b.ctex"
+uid="uid://c4j3vmv08vcek"
+path="res://.godot/imported/exit_game_off.png-c6ad96137e5b0898a5d4d1991a6c8455.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/masks/m3_blue.png"
-dest_files=["res://.godot/imported/m3_blue.png-9ededda1427ac044b9a770a162f75b2b.ctex"]
+source_file="res://assets/gui/exit_game_off.png"
+dest_files=["res://.godot/imported/exit_game_off.png-c6ad96137e5b0898a5d4d1991a6c8455.ctex"]
 
 [params]
 
