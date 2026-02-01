@@ -19,16 +19,16 @@
 [ext_resource type="Resource" uid="uid://cbjxt1oa780em" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="9_dquol"]
 [ext_resource type="Texture2D" uid="uid://56snc675a3ix" path="res://assets/objects/parrucca.png" id="10_0gyb6"]
 [ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
-[ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
+[ext_resource type="PackedScene" uid="uid://bi4y2f4v11sul" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
 [ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
-[ext_resource type="Texture2D" uid="uid://c0xj03a8jxtbr" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
+[ext_resource type="Texture2D" uid="uid://cxfrk4owv54jg" path="res://assets/masks/m1_yellow.png" id="16_1wdlg"]
 [ext_resource type="Texture2D" uid="uid://bfgsx21p80np3" path="res://assets/gui/Object_Menu_Background.png" id="16_l22rq"]
 [ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
-[ext_resource type="Texture2D" uid="uid://cewphv6ffdyku" path="res://assets/masks/m1_grey.png" id="18_86oho"]
+[ext_resource type="Texture2D" uid="uid://bsa7l65exbp38" path="res://assets/masks/m1_grey.png" id="18_86oho"]
 [ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
-[ext_resource type="Script" uid="uid://dn3e0atjo4qy8" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
+[ext_resource type="Script" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
 [ext_resource type="Texture2D" uid="uid://d0xujppg2lov0" path="res://assets/gui/up_button.png" id="25_o2g6k"]
 [ext_resource type="Texture2D" uid="uid://sksj07pijsdv" path="res://assets/gui/centre_button.png" id="28_5p8ax"]
 [ext_resource type="Texture2D" uid="uid://bxi7lrfdg6fwg" path="res://assets/gui/down_button.png" id="29_ed34g"]
@@ -200,8 +200,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -152.0
-offset_bottom = 152.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ikh7f")

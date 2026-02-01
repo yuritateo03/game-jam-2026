@@ -44,7 +44,7 @@ func _process(_delta: float) -> void:
 	pass
 
 func _on_gioca_button_pressed():
-	get_tree().change_scene_to_file("res://scripts/scenes/Gallery.tscn")
+	get_tree().change_scene_to_file("res://Levels/MainLevel.tscn")
 
 func _on_gallery_button_pressed():
 	get_tree().change_scene_to_file("res://scripts/scenes/Gallery.tscn")
