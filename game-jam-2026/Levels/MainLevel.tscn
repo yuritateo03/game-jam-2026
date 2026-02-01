@@ -11,13 +11,64 @@
 [ext_resource type="Script" uid="uid://cgxru8smay6v3" path="res://Levels/Decorations/TagsResource/TagsRes.gd" id="5_7ugy3"]
 [ext_resource type="Texture2D" uid="uid://lkfnq34b1b6d" path="res://assets/characters/Guglielmo.png" id="5_385d4"]
 [ext_resource type="Script" uid="uid://d30a6rhwi6wa" path="res://Levels/Decorations/TagsResource/SubThemeTag.gd" id="6_774x7"]
+[ext_resource type="Resource" uid="uid://ck5wk2vesf3rx" path="res://Levels/Decorations/TagsResource/Colors/Red.tres" id="6_ndu1b"]
 [ext_resource type="Texture2D" uid="uid://kjqn3jc8om73" path="res://assets/objects/cappuccio.png" id="6_wa8mu"]
+[ext_resource type="Resource" uid="uid://droc5a5c5ejl6" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="8_385d4"]
+[ext_resource type="Resource" uid="uid://cbjxt1oa780em" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="9_dquol"]
 [ext_resource type="Texture2D" uid="uid://56snc675a3ix" path="res://assets/objects/parrucca.png" id="10_0gyb6"]
+[ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
 [ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
+[ext_resource type="Texture2D" uid="uid://cqrrj287l6j4h" path="res://assets/masks/mask_yel.png" id="16_1wdlg"]
+[ext_resource type="Resource" uid="uid://b1dyol38str7t" path="res://Levels/Decorations/TagsResource/Colors/Yellow.tres" id="17_f73am"]
+[ext_resource type="Texture2D" uid="uid://ucemduqwraei" path="res://assets/masks/mask_grey.png" id="18_86oho"]
+[ext_resource type="Resource" uid="uid://dfcvn28fyxo45" path="res://Levels/Decorations/TagsResource/SubTheme/Western.tres" id="19_qcvw1"]
+[ext_resource type="Script" uid="uid://dn3e0atjo4qy8" path="res://Levels/ExitLevelButton.gd" id="24_qcvw1"]
+
+[sub_resource type="Resource" id="Resource_385d4"]
+script = ExtResource("5_7ugy3")
+colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_1wdlg"]
+script = ExtResource("5_7ugy3")
+position = 2
+theme = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_86oho"]
+script = ExtResource("5_7ugy3")
+position = 3
+colors = Array[ExtResource("4_vo7st")]([ExtResource("17_f73am")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_qcvw1"]
+script = ExtResource("3_pm182")
+image = ExtResource("16_1wdlg")
+tags = SubResource("Resource_86oho")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_btxl3"]
+script = ExtResource("5_7ugy3")
+position = 3
+colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("19_qcvw1")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_tytca"]
+script = ExtResource("3_pm182")
+image = ExtResource("18_86oho")
+tags = SubResource("Resource_btxl3")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="Resource" id="Resource_5wso4"]
 script = ExtResource("5_7ugy3")
+colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("8_385d4")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [sub_resource type="Resource" id="Resource_bfvw3"]
@@ -28,6 +79,8 @@ metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="Resource" id="Resource_gkx6n"]
 script = ExtResource("5_7ugy3")
+colors = Array[ExtResource("4_vo7st")]([ExtResource("6_ndu1b")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [sub_resource type="Resource" id="Resource_ndu1b"]
@@ -61,6 +114,9 @@ metadata/_custom_type_script = "uid://oit62jpmos5h"
 [sub_resource type="Resource" id="Resource_vo7st"]
 script = ExtResource("5_7ugy3")
 position = 2
+theme = 1
+colors = Array[ExtResource("4_vo7st")]([ExtResource("9_dquol")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("10_gm63m")])
 metadata/_custom_type_script = "uid://cgxru8smay6v3"
 
 [sub_resource type="Resource" id="Resource_0tv47"]
@@ -105,8 +161,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-split_offsets = PackedInt32Array(-100, 100)
-split_offset = -100
+split_offsets = PackedInt32Array(-1)
+split_offset = -1
 metadata/_edit_lock_ = true
 
 [node name="QueryPanel" type="Panel" parent="GameInterface" unique_id=604843572]
@@ -126,9 +182,15 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Else" parent="GameInterface" unique_id=1239138290 instance=ExtResource("2_7ugy3")]
+visible = false
 layout_mode = 2
 character = ExtResource("3_gkx6n")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+query_threshold = 30
+pos_response = "BRAVO"
+neg_response = "NON C'HAI STILE"
+query_tags_pos = Array[ExtResource("5_7ugy3")]([SubResource("Resource_385d4")])
+query_tags_neg = Array[ExtResource("5_7ugy3")]([SubResource("Resource_1wdlg")])
 
 [node name="CharacterRect" parent="GameInterface/Else" index="0" unique_id=2016840858]
 anchors_preset = -1
@@ -183,7 +245,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel" unique_id=1573459837]
-wait_time = 10.0
+wait_time = 3.0
 one_shot = true
 
 [node name="PauseButton" type="TextureButton" parent="GameInterface/VSplitContainer/Time_PauseContainer" unique_id=1912748194]
@@ -204,7 +266,12 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="UpButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+[node name="MaskButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=394588692 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
+layout_mode = 2
+main = NodePath("../../../../..")
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_qcvw1"), SubResource("Resource_tytca")])
+
+[node name="UpButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=1040566983 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
 main = NodePath("../../../../..")
 deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_bfvw3"), SubResource("Resource_ndu1b")])
@@ -344,6 +411,33 @@ text = "SEI IN PAUSA CAFFè"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="EndLayer" type="CanvasLayer" parent="." unique_id=481143384]
+visible = false
+
+[node name="EndLabel" type="Label" parent="EndLayer" unique_id=890672501]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Ottimo lavoro. Hai terminato la tua prima giornata."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitLevelButton" type="TextureButton" parent="EndLayer" unique_id=1216767710]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -320.0
+offset_bottom = 172.0
+grow_horizontal = 0
+texture_normal = ExtResource("12_vqjuy")
+script = ExtResource("24_qcvw1")
+
 [connection signal="timeout" from="GameInterface/VSplitContainer/Time_PauseContainer/TimerPanel/Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="GameInterface/VSplitContainer/Time_PauseContainer/PauseButton" to="." method="_on_pause_button_pressed"]
 [connection signal="pressed" from="ResultLayer/Control/TitleContainer/ConfermResultButton" to="." method="_on_conferm_result_button_pressed"]
@@ -351,6 +445,7 @@ vertical_alignment = 1
 [connection signal="pressed" from="GalleryLayer/Control/HBoxContainer/Portrait2" to="." method="_on_portrait_2_pressed"]
 [connection signal="pressed" from="GalleryLayer/Control/HBoxContainer/Portrait3" to="." method="_on_portrait_3_pressed"]
 [connection signal="pressed" from="GalleryLayer/Control/ExitGalleryButton" to="." method="_on_exit_gallery_button_pressed"]
+[connection signal="pressed" from="EndLayer/ExitLevelButton" to="EndLayer/ExitLevelButton" method="_on_pressed"]
 
 [editable path="GameInterface/Else"]
 [editable path="GameInterface/Rosy"]
