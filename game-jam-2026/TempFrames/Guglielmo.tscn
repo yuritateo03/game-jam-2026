@@ -1,14 +1,13 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_2h21b"]
-[ext_resource type="Texture2D" path="res://assets/characters/Guglielmo.png" id="2_shg13"]
-[ext_resource type="Texture2D" path="res://assets/objects/cappuccio.png" id="3_s0vud"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_q5r52"]
+[ext_resource type="Texture2D" path="res://assets/characters/Guglielmo.png" id="2_2h21b"]
 
 [node name="Guglielmo" type="Control" unique_id=817062701]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_2h21b")
-character = ExtResource("2_shg13")
+script = ExtResource("1_q5r52")
+character = ExtResource("2_2h21b")
 query = "La richiesta di Guglielo"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
@@ -21,7 +20,7 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_shg13")
+texture = ExtResource("2_2h21b")
 stretch_mode = 5
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
@@ -34,7 +33,6 @@ offset_top = -128.0
 offset_right = 256.0
 offset_bottom = 192.0
 grow_horizontal = 2
-texture = ExtResource("3_s0vud")
 expand_mode = 5
 
 [node name="Mask" type="TextureRect" parent="CharacterRect" unique_id=100796827]

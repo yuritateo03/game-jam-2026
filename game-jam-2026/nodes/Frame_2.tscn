@@ -1,14 +1,14 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_huowe"]
-[ext_resource type="Texture2D" path="res://assets/gui/rosy 2.png" id="2_lrc11"]
+[ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_er418"]
+[ext_resource type="Texture2D" path="res://assets/characters/Guglielmo.png" id="2_s06g2"]
 
-[node name="Rosy" type="Control" unique_id=1458582970]
+[node name="Guglielmo" type="Control" unique_id=817062701]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("1_huowe")
-character = ExtResource("2_lrc11")
-query = "La richiesta di rosy"
+script = ExtResource("1_er418")
+character = ExtResource("2_s06g2")
+query = "La richiesta di Guglielo"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
@@ -20,7 +20,7 @@ offset_top = -0.5200043
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_lrc11")
+texture = ExtResource("2_s06g2")
 stretch_mode = 5
 
 [node name="Up" type="TextureRect" parent="CharacterRect" unique_id=2114982018]
