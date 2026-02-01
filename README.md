@@ -23,3 +23,9 @@
 - Progressi su musica e VFX
 - Progressi sul programming del gioco, inizio dell'implementazione della GUI
 - Progressi sugli assets
+
+### Giorno 3:
+- Terminare gli assets mancanti (art, musica)
+- Terminare il codice (gioco funzionante, implementazione GUI e assets restanti)
+- Quality control (ricontrollare il codice, testing, bug fix)
+- CONSEGNA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
