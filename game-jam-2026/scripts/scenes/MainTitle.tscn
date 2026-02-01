@@ -14,6 +14,7 @@
 [ext_resource type="FontFile" uid="uid://den1a0eh0isal" path="res://assets/font/Google_Sans/static/GoogleSans-Italic.ttf" id="12_pesqw"]
 [ext_resource type="Texture2D" uid="uid://c41yfnroc3eh7" path="res://assets/gui/play_button.png" id="13_hcoy4"]
 [ext_resource type="AudioStream" uid="uid://dw07pvsji4kqs" path="res://sounds/music/intro_marimba.wav" id="14_yvqej"]
+[ext_resource type="Texture2D" uid="uid://c4j3vmv08vcek" path="res://assets/gui/exit_game_off.png" id="15_pesqw"]
 
 [node name="Control" type="Control" unique_id=952706856]
 layout_mode = 3
@@ -46,8 +47,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0.20784314, 0.13333334, 0.12156863, 1)
 theme_override_fonts/bold_font = ExtResource("3_ija45")
-theme_override_font_sizes/normal_font_size = 100
-theme_override_font_sizes/bold_font_size = 100
+theme_override_font_sizes/normal_font_size = 150
+theme_override_font_sizes/bold_font_size = 150
 text = "Y's Boutique"
 fit_content = true
 scroll_active = false
@@ -65,6 +66,7 @@ offset_bottom = 649.0
 layout_mode = 2
 size_flags_horizontal = 0
 icon = ExtResource("4_3hp52")
+flat = true
 
 [node name="Gioca Title" type="RichTextLabel" parent="HBoxContainer/Gioca" unique_id=1708729582]
 layout_mode = 1
@@ -87,6 +89,7 @@ vertical_alignment = 2
 layout_mode = 2
 size_flags_horizontal = 6
 icon = ExtResource("5_ll54c")
+flat = true
 
 [node name="Gallery Title" type="RichTextLabel" parent="HBoxContainer/Gallery" unique_id=1230865866]
 layout_mode = 1
@@ -110,6 +113,7 @@ vertical_alignment = 2
 [node name="Settings" type="Button" parent="HBoxContainer" unique_id=2071720579]
 layout_mode = 2
 icon = ExtResource("6_fp7vw")
+flat = true
 
 [node name="Settings Title" type="RichTextLabel" parent="HBoxContainer/Settings" unique_id=834183410]
 layout_mode = 1
@@ -228,7 +232,42 @@ stream = ExtResource("14_yvqej")
 autoplay = true
 mix_target = 1
 
+[node name="ExitGame" type="Button" parent="." unique_id=2140954470]
+custom_minimum_size = Vector2(290, 158)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -290.0
+offset_top = -158.0
+grow_horizontal = 0
+grow_vertical = 0
+icon = ExtResource("15_pesqw")
+flat = true
+icon_alignment = 2
+expand_icon = true
+
+[node name="Label" type="Label" parent="ExitGame" unique_id=1521229008]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.503
+anchor_right = 0.5
+anchor_bottom = 0.503
+offset_left = -90.0
+offset_top = -36.474007
+offset_right = 42.0
+offset_bottom = 35.525993
+theme_override_colors/font_color = Color(0.972549, 0.94509804, 0.87058824, 1)
+theme_override_fonts/font = ExtResource("9_not4n")
+theme_override_font_sizes/font_size = 26
+text = "Exit Game"
+vertical_alignment = 1
+
 [connection signal="pressed" from="HBoxContainer/Gioca" to="." method="_on_gioca_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Gallery" to="." method="_on_gallery_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Settings" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="Focus/baloon/Start" to="." method="on_start_button_pressed"]
+[connection signal="pressed" from="ExitGame" to="." method="_on_exit_game_pressed"]

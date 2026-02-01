@@ -13,6 +13,7 @@ extends Control
 @onready var portrait_desc =$Focus/TextureRect/portrait_desc
 @onready var focus_area = $Focus
 @onready var portrait_character =$Focus/Character
+@onready var name_gallery = $RichTextLabel
 
 var index: int = 0
 var array_nodi_control: Array[Control] = []
@@ -21,6 +22,7 @@ var array_nodi_control: Array[Control] = []
 func _ready() -> void:
 	#load_gallery()
 	carica_nodi_da_cartella("res://nodes/")
+	name_gallery.text = Global.nome + "'s gallery"
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

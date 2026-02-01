@@ -10,6 +10,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if (Global.nome != ""):
+		title.text = Global.nome + "'s boutique!"
+		focus_area.visible = false;
 	pass
 
 func _input(event):
@@ -42,3 +45,7 @@ func _on_settings_button_pressed():
 
 func on_gallery_button_pressed() -> void:
 	pass # Replace with function body.
+
+
+func _on_exit_game_pressed() -> void:
+	get_tree().quit()
