@@ -4,7 +4,7 @@
 ![Pipeline](docs/pipeline.png)
 
 ## Ruoli
-1. Definire personaggi e oggetti: Franca, Blue, Yuri
+1. Definire personaggi e oggetti: Franca, Blue
 2. Disegnare gli assets: Blue
 3. Programming: Gianfranco, Mars (Extra: Marco, Yuri, Franca, Blu)
 4. Mock-Up della GUI: Franca, Yuri
