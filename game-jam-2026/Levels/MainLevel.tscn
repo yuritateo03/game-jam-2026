@@ -17,7 +17,7 @@
 [ext_resource type="Resource" uid="uid://droc5a5c5ejl6" path="res://Levels/Decorations/TagsResource/SubTheme/Goth.tres" id="8_385d4"]
 [ext_resource type="Resource" uid="uid://cbjxt1oa780em" path="res://Levels/Decorations/TagsResource/Colors/Gray.tres" id="9_dquol"]
 [ext_resource type="Resource" uid="uid://cadby1lewb7ln" path="res://Levels/Decorations/TagsResource/SubTheme/Circus.tres" id="10_gm63m"]
-[ext_resource type="PackedScene" uid="uid://bi4y2f4v11sul" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
+[ext_resource type="PackedScene" uid="uid://bltk17g0rspx1" path="res://scripts/scenes/GalleryInGame.tscn" id="11_0gyb6"]
 [ext_resource type="Texture2D" uid="uid://cwhw1rhrjt4er" path="res://assets/gui/Exit_Button_Iniziale.png" id="12_vqjuy"]
 [ext_resource type="Texture2D" uid="uid://dp7lml6s0wr8v" path="res://assets/gui/timer_gui.png" id="14_41oa5"]
 [ext_resource type="Texture2D" uid="uid://b58c2aapckv4d" path="res://assets/gui/pause_game.png" id="15_l22rq"]
@@ -43,6 +43,8 @@
 [ext_resource type="Texture2D" uid="uid://b8kdrkuutsn67" path="res://assets/gui/Rectangle 14.png" id="31_ed34g"]
 [ext_resource type="Resource" uid="uid://b3h04eax187dj" path="res://Levels/Decorations/TagsResource/Colors/Black.tres" id="31_s6rto"]
 [ext_resource type="Texture2D" uid="uid://d2pf3c1sg31o0" path="res://assets/objects/sangue_sinistro.png" id="32_3b48f"]
+[ext_resource type="Texture2D" uid="uid://dk80jj35kr57q" path="res://assets/objects/baffi.png" id="32_4prt6"]
+[ext_resource type="Resource" uid="uid://dtupx65op8xek" path="res://Levels/Decorations/TagsResource/SubTheme/Disco.tres" id="33_3b48f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tytca"]
 texture = ExtResource("2_btxl3")
@@ -156,6 +158,20 @@ metadata/_custom_type_script = "uid://cgxru8smay6v3"
 script = ExtResource("3_pm182")
 image = ExtResource("32_3b48f")
 tags = SubResource("Resource_35qpb")
+metadata/_custom_type_script = "uid://oit62jpmos5h"
+
+[sub_resource type="Resource" id="Resource_0ih3j"]
+script = ExtResource("5_7ugy3")
+position = 1
+theme = 2
+colors = Array[ExtResource("4_vo7st")]([ExtResource("31_s6rto")])
+subthemes = Array[ExtResource("6_774x7")]([ExtResource("28_fbttw"), ExtResource("29_s6rto"), ExtResource("33_3b48f"), ExtResource("19_qcvw1")])
+metadata/_custom_type_script = "uid://cgxru8smay6v3"
+
+[sub_resource type="Resource" id="Resource_ouyfd"]
+script = ExtResource("3_pm182")
+image = ExtResource("32_4prt6")
+tags = SubResource("Resource_0ih3j")
 metadata/_custom_type_script = "uid://oit62jpmos5h"
 
 [sub_resource type="Resource" id="Resource_mdio0"]
@@ -353,7 +369,7 @@ deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_30akm"), Sub
 layout_mode = 2
 texture_normal = ExtResource("28_5p8ax")
 main = NodePath("../../../../..")
-deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_l6tsj"), SubResource("Resource_1arfn")])
+deco_buttons = Array[ExtResource("3_pm182")]([SubResource("Resource_l6tsj"), SubResource("Resource_1arfn"), SubResource("Resource_ouyfd")])
 
 [node name="DownButton" parent="GameInterface/VSplitContainer/ButtonsPanel/VBoxContainer" unique_id=2127206814 node_paths=PackedStringArray("main") instance=ExtResource("2_dncm7")]
 layout_mode = 2
