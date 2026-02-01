@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Levels/character_interface.gd" id="1_2h21b"]
 [ext_resource type="Texture2D" path="res://assets/characters/Guglielmo.png" id="2_shg13"]
-[ext_resource type="Texture2D" path="res://assets/objects/parrucca.png" id="3_s0vud"]
+[ext_resource type="Texture2D" path="res://assets/objects/cappuccio.png" id="3_s0vud"]
 
 [node name="Guglielmo" type="Control" unique_id=817062701]
 layout_mode = 2

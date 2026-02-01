@@ -17,7 +17,7 @@ size_flags_horizontal = 3
 script = ExtResource("1_kvnec")
 character = ExtResource("2_6vlad")
 query = "PROVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-char_name = "PROVAAA"
+char_name = "ciao"
 
 [node name="CharacterRect" type="TextureRect" parent="." unique_id=2016840858]
 layout_mode = 1
