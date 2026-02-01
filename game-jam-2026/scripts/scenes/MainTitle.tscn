@@ -13,8 +13,32 @@
 [ext_resource type="FontFile" uid="uid://d2q4227l718a5" path="res://assets/font/Google_Sans/static/GoogleSans-BoldItalic.ttf" id="11_yvqej"]
 [ext_resource type="FontFile" uid="uid://den1a0eh0isal" path="res://assets/font/Google_Sans/static/GoogleSans-Italic.ttf" id="12_pesqw"]
 [ext_resource type="Texture2D" uid="uid://c41yfnroc3eh7" path="res://assets/gui/play_button.png" id="13_hcoy4"]
-[ext_resource type="AudioStream" uid="uid://dw07pvsji4kqs" path="res://sounds/music/intro_marimba.wav" id="14_yvqej"]
+[ext_resource type="Texture2D" uid="uid://nmumiwlkxgj1" path="res://assets/gui/pause_menu.png" id="14_tly6k"]
+[ext_resource type="AudioStream" uid="uid://evno2x5iwr6v" path="res://sounds/music/intro_marimba.wav" id="14_yvqej"]
 [ext_resource type="Texture2D" uid="uid://c4j3vmv08vcek" path="res://assets/gui/exit_game_off.png" id="15_pesqw"]
+[ext_resource type="FontFile" uid="uid://dqaals4ftc3pf" path="res://assets/font/Google_Sans/static/GoogleSans_17pt-Regular.ttf" id="15_uig8l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yvqej"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.66668326, 0.19966345, 0.3133042, 0.5)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pesqw"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
 [node name="Control" type="Control" unique_id=952706856]
 layout_mode = 3
@@ -227,10 +251,129 @@ theme_override_fonts/font = ExtResource("9_not4n")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Inserisci qui il tuo nome"
 
+[node name="baloon2" type="TextureRect" parent="Focus" unique_id=2094308341]
+visible = false
+custom_minimum_size = Vector2(1526, 1029)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 24.150002
+anchor_top = 13.137001
+anchor_right = 24.150002
+anchor_bottom = 13.137001
+offset_left = -763.0
+offset_top = -514.5
+offset_right = 762.99994
+offset_bottom = 514.49994
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_tly6k")
+
+[node name="MusicContainer" type="HBoxContainer" parent="Focus/baloon2" unique_id=153255751]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.3
+anchor_right = 0.8
+anchor_bottom = 0.3
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 100
+
+[node name="Label" type="Label" parent="Focus/baloon2/MusicContainer" unique_id=939095295]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_not4n")
+theme_override_font_sizes/font_size = 90
+text = "Musica"
+
+[node name="HSlider" type="HSlider" parent="Focus/baloon2/MusicContainer" unique_id=990035137]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/slider = SubResource("StyleBoxFlat_yvqej")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_pesqw")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_pesqw")
+max_value = 1.0
+step = 0.01
+
+[node name="SFXContainer" type="HBoxContainer" parent="Focus/baloon2" unique_id=757537128]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.45
+anchor_right = 0.8
+anchor_bottom = 0.45
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 233
+
+[node name="Label" type="Label" parent="Focus/baloon2/SFXContainer" unique_id=321640842]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_not4n")
+theme_override_font_sizes/font_size = 90
+text = "SFX"
+
+[node name="HSlider" type="HSlider" parent="Focus/baloon2/SFXContainer" unique_id=1870683997]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/slider = SubResource("StyleBoxFlat_yvqej")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_pesqw")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_pesqw")
+max_value = 10.0
+tick_count = 10
+
+[node name="Button" type="Button" parent="Focus/baloon2" unique_id=1449899575]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_top = 0.67
+anchor_right = 0.6
+anchor_bottom = 0.67
+offset_left = -77.0
+offset_top = -78.5
+offset_right = 77.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+icon = ExtResource("13_hcoy4")
+
+[node name="Label" type="Label" parent="Focus/baloon2" unique_id=1116589001]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.26
+anchor_top = 0.61
+anchor_right = 0.4
+anchor_bottom = 0.61
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.972549, 0.94509804, 0.87058824, 1)
+theme_override_constants/line_spacing = -20
+theme_override_fonts/font = ExtResource("15_uig8l")
+theme_override_font_sizes/font_size = 80
+text = "Torna 
+al menù"
+vertical_alignment = 1
+
 [node name="Intro MainTitle" type="AudioStreamPlayer" parent="." unique_id=505706872]
 stream = ExtResource("14_yvqej")
 autoplay = true
 mix_target = 1
+playback_type = 1
 
 [node name="ExitGame" type="Button" parent="." unique_id=2140954470]
 custom_minimum_size = Vector2(290, 158)
@@ -270,4 +413,7 @@ vertical_alignment = 1
 [connection signal="pressed" from="HBoxContainer/Gallery" to="." method="_on_gallery_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Settings" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="Focus/baloon/Start" to="." method="on_start_button_pressed"]
+[connection signal="value_changed" from="Focus/baloon2/MusicContainer/HSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="Focus/baloon2/SFXContainer/HSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="pressed" from="Focus/baloon2/Button" to="." method="_on_backmenu_pressed"]
 [connection signal="pressed" from="ExitGame" to="." method="_on_exit_game_pressed"]
